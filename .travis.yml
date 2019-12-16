@@ -22,4 +22,4 @@ deploy:
   keep_history: false
   target_branch: gh-pages
   on:
-    branch: master
+    branch: mdbook
