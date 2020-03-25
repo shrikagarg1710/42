@@ -1,6 +1,6 @@
 # Web Development
 
-**Note**: This file only contains resources that are NOT in the [./open-source-software.md#Learning](./open-source-software.md#Learning) file.
+**Note**: This file only contains resources that are NOT in the [./knowledge-repositories](./knowledge-repositories.md) file.
 
 >If you are completely new to web development, **I HIGHLY RECOMMEND** you visit these links first:
 
@@ -8,7 +8,7 @@ Roadmap to Web Development:
 - [kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
 
 ---
-    
+
 ## Contents
 - [Offline Documentation](#offline-documentation)
 - [Command Line](#command-line)
@@ -252,11 +252,14 @@ See Also [HotFrameworks](https://hotframeworks.com/)
 ---
 
 ### Text Editors and IDEs:
+- [Sublime Text](https://www.sublimetext.com/)
+
 - Interactive Online Code Editors:
-  - [Scrimba](https://scrimba.com/c/cKp6LhL) - HTML, CSS, JavaScript
-  - [JSFiddle](https://jsfiddle.net) - HTML, CSS, JavaScript, CoffeeScript
-  - [CodePen](https://codepen.io/) - HTML, CSS, JavaScript
-  - [SoloLearn](https://code.sololearn.com/) - HTML, CSS, JavaScript
+  - [repl.it](https://repl.it/)
+  - [Scrimba](https://scrimba.com/c/cKp6LhL) - HTML, CSS, JavaScript.
+  - [JSFiddle](https://jsfiddle.net) - HTML, CSS, JavaScript, CoffeeScript.
+  - [CodePen](https://codepen.io/) - HTML, CSS, JavaScript.
+  - [SoloLearn](https://code.sololearn.com/) - HTML, CSS, JavaScript.
 
 ---
 
@@ -366,9 +369,10 @@ See More: [Gist by Brad Traversy](https://gist.github.com/bradtraversy/61171a9b8
   - [r/emacs](https://www.reddit.com/r/emacs)
 
 - Sites/
+  - [web.dev](https://web.dev/) -  learn to build for the modern web.
+  - [sitepoint](https://www.sitepoint.com/)
   - [The changelog](https://changelog.com/)
   - [Webframe](https://webframe.xyz/) - Beautiful Screenshots showing webapp designs.
-  - [repl.it](https://repl.it/)
   - [Grep.app](https://grep.app/) - Search code in GitHub repos using regular expressions.
   - [Glitch](https://glitch.com/)
   - [DigitalOcean Community Tutorials](https://www.digitalocean.com/community/tutorials/)
@@ -383,3 +387,9 @@ See More: [Gist by Brad Traversy](https://gist.github.com/bradtraversy/61171a9b8
   - [Pusher Developer Tutorials](https://pusher.com/tutorials)
   - [Cooperpress](https://cooperpress.com/) - Weekly email newsletters to developers and software engineers.
   - [RisingStack Blog](https://blog.risingstack.com/)
+  
+- Pastebins
+  - [GitHub Gists](https://gist.github.com/) - Instantly share code, notes, and snippets.
+  - [Pastebin](https://pastebin.com/)
+  - [Ubuntu Pastebin](https://paste.ubuntu.com/)
+  
