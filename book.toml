@@ -3,7 +3,7 @@ authors = ["rsapkf"]
 language = "en"
 multilingual = false
 src = "src"
-title = "rsapkf/42"
+title = "[ rsapkf / 42 ]"
 [output.html]
 default-theme = "navy"
 preferred-dark-theme = "navy"
