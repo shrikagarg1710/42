@@ -1,0 +1,778 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Web Development - [ rsapkf / 42 ]</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 42</a></li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">2.</strong> docs/</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../docs/knowledge-repositories.html"><strong aria-hidden="true">2.1.</strong> Knowledge Repositories</a></li><li class="chapter-item expanded "><a href="../docs/web-development.html" class="active"><strong aria-hidden="true">2.2.</strong> Web Development</a></li><li class="chapter-item expanded "><a href="../docs/programming.html"><strong aria-hidden="true">2.3.</strong> Programming</a></li><li class="chapter-item expanded "><a href="../docs/open-source-software.html"><strong aria-hidden="true">2.4.</strong> Open Source Software</a></li><li class="chapter-item expanded "><a href="../docs/linux-configuration.html"><strong aria-hidden="true">2.5.</strong> Linux Configuration</a></li><li class="chapter-item expanded "><a href="../docs/privacy-tools.html"><strong aria-hidden="true">2.6.</strong> Privacy Tools</a></li><li class="chapter-item expanded "><a href="../docs/software-and-services.html"><strong aria-hidden="true">2.7.</strong> Software and Services</a></li><li class="chapter-item expanded "><a href="../docs/coding-challenges.html"><strong aria-hidden="true">2.8.</strong> Coding Challenges</a></li><li class="chapter-item expanded "><a href="../docs/science-technology-and-mathematics.html"><strong aria-hidden="true">2.9.</strong> Science, Technology and Mathematics</a></li><li class="chapter-item expanded "><a href="../docs/moocs-and-courses.html"><strong aria-hidden="true">2.10.</strong> Massive Open Online Courses</a></li><li class="chapter-item expanded "><a href="../docs/free-to-read-books-and-guides.html"><strong aria-hidden="true">2.11.</strong> Free-To-Read Books and Guides</a></li><li class="chapter-item expanded "><a href="../docs/cubing-puzzles-and-magic.html"><strong aria-hidden="true">2.12.</strong> Cubing, Puzzles and Magic</a></li><li class="chapter-item expanded "><a href="../docs/reddit.html"><strong aria-hidden="true">2.13.</strong> Reddit Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/youtube.html"><strong aria-hidden="true">2.14.</strong> YouTube Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/random-useful-sites.html"><strong aria-hidden="true">2.15.</strong> Random Useful Sites</a></li><li class="chapter-item expanded "><a href="../docs/ebooks-and-research-papers.html"><strong aria-hidden="true">2.16.</strong> Ebooks and Research Papers</a></li><li class="chapter-item expanded "><a href="../docs/high-school.html"><strong aria-hidden="true">2.17.</strong> High School</a></li><li class="chapter-item expanded "><a href="../docs/extras.html"><strong aria-hidden="true">2.18.</strong> Extras</a></li><li class="chapter-item expanded "><a href="../docs/unsorted.html"><strong aria-hidden="true">2.19.</strong> Unsorted</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../CONTRIBUTING.html"><strong aria-hidden="true">3.</strong> CONTRIBUTING</a></li><li class="chapter-item expanded "><a href="../LICENSE.html"><strong aria-hidden="true">4.</strong> LICENSE</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">[ rsapkf / 42 ]</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/rsapkf/42" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#web-development" id="web-development">Web Development</a></h1>
+<p><strong>Note</strong>: This file only contains resources that are NOT in the <a href="./knowledge-repositories.html">./knowledge-repositories</a> file.</p>
+<blockquote>
+<p>If you are completely new to web development, <strong>I HIGHLY RECOMMEND</strong> you visit these links first:</p>
+</blockquote>
+<p>Roadmap to Web Development:</p>
+<ul>
+<li><a href="https://github.com/kamranahmedse/developer-roadmap">kamranahmedse/developer-roadmap</a></li>
+</ul>
+<hr />
+<h2><a class="header" href="#contents" id="contents">Contents</a></h2>
+<ul>
+<li><a href="#offline-documentation">Offline Documentation</a></li>
+<li><a href="#command-line">Command Line</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#programming-languages">Programming Languages</a>
+<ul>
+<li><a href="#front-end-programming-languages">Front-End Programming Languages</a></li>
+<li><a href="#back-end-programming-languages">Back-End Programming Languages</a></li>
+</ul>
+</li>
+<li><a href="#web-frameworks">Web Frameworks</a>
+<ul>
+<li><a href="#front-end-web-frameworks">Front-End Web Frameworks</a></li>
+<li><a href="#back-end-web-frameworks">Back-End Web Frameworks</a></li>
+</ul>
+</li>
+<li><a href="#data-visualization">Data Visualization</a></li>
+<li><a href="#static-site-generators">Static Site Generators</a></li>
+<li><a href="#databases">DataBases</a></li>
+<li><a href="#text-editors-and-ides">Text Editors and IDEs</a></li>
+<li><a href="#regular-expressions-and-algorithms">Regular Expressions and Algorithms</a></li>
+<li><a href="#developer-tools">Developer Tools</a></li>
+<li><a href="#extra-resources">Extra Resources</a></li>
+</ul>
+<hr />
+<h3><a class="header" href="#offline-documentation" id="offline-documentation">Offline Documentation:</a></h3>
+<ul>
+<li><a href="https://velocity.silverlakesoftware.com/">Velocity</a> - <code>Windows only</code></li>
+</ul>
+<hr />
+<h3><a class="header" href="#command-line" id="command-line">Command Line:</a></h3>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://ss64.com/">SS64 (Command line reference - Database and OS scripting)</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#git" id="git">Git:</a></h3>
+<ul>
+<li>
+<p>Sites/</p>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials">Atlassian Git Tutorial</a> - Git Tutorials and Training.</li>
+<li><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet">Git Cheat Sheet</a></li>
+<li><a href="https://www.gitkraken.com/learn-git">GitKraken Git Tutorials</a></li>
+</ul>
+</li>
+<li>
+<p>GitHub/</p>
+<ul>
+<li><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=label%3A%22good+first+issue%22+language%3APython+state%3Aopen&amp;type=Issues&amp;ref=advsearch&amp;l=Python&amp;l=">Good First Issues</a> - opportunities for contributing to open projects on GitHub</li>
+</ul>
+</li>
+<li>
+<p>Git Clients/</p>
+<ul>
+<li><a href="https://www.sourcetreeapp.com/">Sourcetree</a> - Free Git GUI for Mac and Windows <code>closed-source</code></li>
+<li><a href="https://www.sublimemerge.com/">Sublime Merge</a> - Git Client, done Sublime <code>freemium</code></li>
+<li><a href="https://www.gitkraken.com">GitKraken</a> <code>freemium</code></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#programming-languages" id="programming-languages">Programming Languages:</a></h3>
+<h4><a class="header" href="#front-end-programming-languages" id="front-end-programming-languages">Front-End Programming Languages</a></h4>
+<ul>
+<li>
+<h4><a class="header" href="#htmlcssjavascript" id="htmlcssjavascript">HTML+CSS+JavaScript:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network(MDN) Docs</a>--(Highly Recommended)-- - everything you need to learn to develop web applications. Probably the only resource you'll need to learn web development. It also contains well organized guides to Django Web Framework, Express and Node.js.</li>
+<li><a href="https://www.freecodecamp.org/">freeCodeCamp.org</a>--(Highly Recommended)-- - an excellent <a href="">open source</a> resource for learning web development in an interactive way. Recommended by MDN and also covers React and Redux, Node, Express, D3.js, Bootstrap, Sass, jQuery, JSON and MongoDB.</li>
+<li><a href="https://www.theodinproject.com/">The Odin Project</a> - another excellent <a href="">open source</a> resource similar to the freeCodeCamp project. Covers Ruby, RubyOnRails.</li>
+<li><a href="https://www.w3schools.com/">w3schools</a> - While this site is pretty decent for quick syntax lookup and reference, I --DO NOT-- recommend this over MDN to learn -how to program-. Before choosing w3schools over above resources, please go through <a href="https://news.ycombinator.com/item?id=6422998">this</a> hackernews thread and <a href="https://www.w3fools.com">this</a> site by the mods of <a href="www.reddit.com/learnprogramming">r/learnprogramming</a>. This site also has references to Ajax, Node, PHP, SQL, XML, Java, Python, ASP, Angular, jQuery, Bootstrap, C++ and Raspberry Pi.</li>
+<li><a href="https://fullstackopen.com/en">Deep Dive Into Modern Web Development - University of Helsinki</a> - React, Node, Express, GraphQL</li>
+<li><a href="https://htmldog.com/">HTML Dog</a> - HTML, CSS, JavaScript</li>
+<li><a href="https://scrimba.com/">Scrimba</a> - Interactive way to learn and test HTML, CSS and JavaScript code and lessons on React, Vue and Angular frameworks.</li>
+<li><a href="https://www.sololearn.com/">SoloLean</a> - Learn HTML, CSS, JavaScript, PHP, Ruby, SQL, jQuery, Java, C, C++, C#, Swift on the <a href="https://www.sololearn.com/">Web</a> or their Mobile App <a href="https://play.google.com/store/apps/details?id=com.sololearn">Google Play</a> | <a href="https://itunes.apple.com/us/app/sololearn-learn-to-code/id1210079064?mt=8">App Store</a></li>
+<li><a href="https://lambdaschool.com/courses/cs/web/bootcamp/">LambdaSchool Free Online Web Mini Bootcamp</a> - HTML, CSS, JS</li>
+<li><a href="https://caniuse.com/#home">Can I use... Support tables for HTML5, CSS3, etc</a></li>
+<li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Box-shadow_generator">Box-shadow generator</a> - This tool lets you construct CSS box-shadow effects, to add box shadow effects to your CSS objects.</li>
+<li><a href="https://tympanus.net/codrops/">Codrops</a> - Web Dev and Design News.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#javascript" id="javascript">JavaScript:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://javascript.info/">The Modern JavaScript Tutorial</a></li>
+<li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+<li><a href="https://www.javascript30.com">JavaScript30</a>(GitHub - <a href="https://github.com/wesbos/JavaScript30">wesbos/JavaScript30</a>)</li>
+<li><a href="https://jgthms.com/javascript-in-14-minutes/">JavaScript in 14 minutes</a></li>
+<li><a href="https://wsvincent.com/javascript-guide/">William Vincent's JavaScript Guide</a></li>
+<li><a href="https://blog.webdevsimplified.com/">Web Dev Simplified Blog</a> - By Kyle Cook.</li>
+<li><a href="https://babeljs.io/docs/en/learn/">BabelJS ES2015 Guide</a></li>
+<li><a href="https://pomb.us/">Rodrigo Pombo's Blog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#htmlcss" id="htmlcss">HTML/CSS:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://htmlreference.io/">HTML Reference</a> - A free guide to HTML.</li>
+<li><a href="https://cssreference.io/">CSS Reference</a> - A free visual guide to CSS.</li>
+<li><a href="https://marksheet.io/">Marksheet</a> - A free HTML and CSS Tutorial.</li>
+<li><a href="https://flexbox.io/">What The Flexbox</a> - a set of 20 free videos to learn CSS flexbox layout by <a href="https://twitter.com/wesbos">Wes Bos</a>. Also check his <a href="https://commandlinepoweruser.com/">command line power user</a> videos.</li>
+<li><a href="https://cssgrid.io/">CSSGrid.io</a> - a set of 20 free videos to learn CSS grid layout by <a href="https://twitter.com/wesbos">Wes Bos</a>.</li>
+<li><a href="https://css-tricks.com/">CSS-TRICKS</a></li>
+<li><a href="https://mozilladevelopers.github.io/playground/css-grid">Mozilla Grid Playground</a> - Learn about CSS Grid Layout and the Firefox DevTools layout panel.</li>
+<li><a href="https://gridbyexample.com/">Grid by Example</a>.</li>
+<li><a href="https://flexboxfroggy.com/">Flexbox Froggy</a> - a simple 24 level game learn CSS flexbox.</li>
+<li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a> - Learn CSS Flexbox by playing a tower defense game. </li>
+<li><a href="https://cssgridgarden.com/">Grid Garden</a> - Learn CSS Grid Layout by playing 28 different levels of Grid Garden. </li>
+<li><a href="https://websitesetup.org/html5-periodical-table/">HTML periodic table</a></li>
+<li><a href="https://www.html-5-tutorial.com/all-html-tags.htm">All The Tags</a></li>
+<li><a href="https://www.strml.net/">STRML</a></li>
+<li><a href="https://jgthms.com/web-design-in-4-minutes/">Web Design in 4 minutes</a> - Learn the basics of web design in 4 minutes with this interactive tutorial</li>
+<li><a href="https://cssgradient.io/">CSS Gradient</a> - free tool that lets you create a gradient background for websites and technical articles.</li>
+<li><a href="https://websitesetup.org/css3-cheat-sheet/">CSS3 Cheat Sheet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#back-end-programming-languages" id="back-end-programming-languages">Back-End Programming Languages</a></h3>
+<ul>
+<li>
+<h4><a class="header" href="#python" id="python">Python:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://www.python.org/doc/">Official Python Docs</a> - the official and easy to understand documentation of the Python programming language.</li>
+<li><a href="https://docs.python-guide.org/">The Hitchhiker's Guide to Python</a> - The best practice to installation, configuration and usage of Python on a daily basis.</li>
+<li><a href="https://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a> by <a href="https://twitter.com/AlSweigart">Al Sweigart</a>. His other free to read online books- <a href="https://inventwithpython.com/invent4thed">Invent Your Own Computer Games With Python</a>, <a href="https://inventwithpython.com/pygame/">Making Games With Python and PyGame</a> and <a href="https://inventwithpython.com/cracking/">Cracking Codes With Python</a>.</li>
+<li><a href="https://python.libhunt.com/">Awesome Python</a> (GitHub - <a href="https://github.com/vinta/awesome-python">vinta/awesome-python</a>) - A curated list of awesome Python frameworks, packages, software and resources.</li>
+<li><a href="https://wiki.python.org/moin/">Python Wiki</a></li>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers">Python for Non-Programmers</a></li>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">Python for Programmers</a></li>
+<li><a href="http://www.pythontutor.com/">Python Tutor</a> -  Visualize Python, Java, C, C++, JavaScript, TypeScript, and Ruby code execution.</li>
+<li><a href="https://www.diveinto.org/python3/">Dive Into Python 3</a> by Mark Pilgrim.</li>
+<li><a href="https://pythonprogramming.net/">pythonprogramming.net</a></li>
+<li><a href="https://greenteapress.com/wp/">How To Think Like A Computer Scientist</a> - a free online book recommended by <a href="">MIT OpenCourseWare</a></li>
+<li><a href="https://realpython.com/">RealPython</a></li>
+<li><a href="https://developers.google.com/edu/python/">Google's Python Class</a></li>
+<li><a href="https://pythondiscord.com/">Python Discord</a></li>
+<li><a href="https://www.fullstackpython.com/">Full Stack Python</a></li>
+<li><a href="https://wsvincent.com/">William Vincent's Blog</a></li>
+<li><a href="https://nedbatchelder.com/">Ned Batchelder's Blog</a></li>
+<li><a href="https://treyhunner.com/">Trey Hunner's Blog</a></li>
+<li><a href="https://devguide.python.org/">Python Developer’s Guide</a> - A comprehensive resource for contributing to Python.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#ruby" id="ruby">Ruby:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://www.ruby-lang.org/en/documentation/">Ruby Docs</a></li>
+<li><a href="https://rubystyle.guide/">The Ruby Style Guide</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#php" id="php">PHP:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://www.php.net/manual/en/index.php">Official PHP Manuals</a></li>
+<li><a href="https://pastebin.com/gfBPg24A">PHP Pastebin</a> - Collection of PHP links</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#web-frameworks" id="web-frameworks">Web Frameworks:</a></h3>
+<h4><a class="header" href="#front-end-web-frameworks" id="front-end-web-frameworks">Front-End Web Frameworks:</a></h4>
+<ul>
+<li>
+<h4><a class="header" href="#bootstrapcss" id="bootstrapcss">Bootstrap(CSS):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#bulmacss" id="bulmacss">Bulma(CSS):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://bulma.io/documentation/">Bulma Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#reactjavascript" id="reactjavascript">React(JavaScript):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://reactjs.org/docs/hello-world.html">Official React Docs</a></li>
+<li><a href="https://reactjs.org/tutorial/tutorial.html">Official Tutorial for building a small game using React</a></li>
+<li><a href="https://overreacted.io/">Overreacted</a> - Dan Abramov, Creator of ReduxJS.</li>
+<li><a href="https://joshwcomeau.com/">Josh W. Comeau</a> - Josh W. Comeau, Developer @GatsbyJS.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#reduxjavascript" id="reduxjavascript">Redux(JavaScript):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://redux.js.org/basics/basic-tutorial">Official Redux Tutorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#angularjavascript" id="angularjavascript">Angular(JavaScript):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://angular.io/docs">Angular Docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#vuejavascript" id="vuejavascript">Vue(JavaScript):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://vuejs.org/v2/guide/">Vue Docs</a></li>
+<li><a href="https://vueschool.io/">VueSchool</a> - Learn Vue.js from core-team members and industry experts.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4><a class="header" href="#back-end-web-frameworks" id="back-end-web-frameworks">Back-End Web Frameworks:</a></h4>
+<ul>
+<li>
+<h4><a class="header" href="#djangopython" id="djangopython">Django(Python):</a></h4>
+<ul>
+<li>
+<p>Sites/</p>
+<ul>
+<li><a href="https://www.djangoproject.com/start/">Official Django Tutorial</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website">Django Tutorial by MDN</a> - a library catalog website in Django.</li>
+<li><a href="https://djangogirls.org/">Django Girls</a></li>
+<li><a href="https://pythonprogramming.net/django-web-development-with-python-intro/">Django Tutorial</a> by sentdex.</li>
+<li><a href="https://learndjango.com/">Learn Django</a> by William Vincent.</li>
+</ul>
+</li>
+<li>
+<p>YouTube/</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p">Django Blog Tutorial by Corey Schafer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#flaskpython" id="flaskpython">Flask(Python):</a></h4>
+<ul>
+<li>
+<p>Sites/</p>
+<ul>
+<li><a href="http://flask.pocoo.org/docs/0.12/tutorial/">Official Flask Tutorial</a></li>
+<li><a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega Tutorial</a></li>
+</ul>
+</li>
+<li>
+<p>YouTube/</p>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH">Flask Blog Tutorial by Corey Schafer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#nodejsexpressjsjavascript" id="nodejsexpressjsjavascript">NodeJS/ExpressJS(JavaScript):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://nodejs.org/en/docs/">Node.js Docs</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs">NodeJs Tutorial from MDN</a> - a library catalog website in NodeJS/ExpressJS.</li>
+<li><a href="https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js/5511507#5511507">Node.js resources- Stack Overflow</a></li>
+<li><a href="https://expressjs.com/">ExpressJS Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#rubyonrailsruby" id="rubyonrailsruby">RubyOnRails(Ruby):</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://guides.rubyonrails.org/">Offcial RubyOnRails Guides</a></li>
+<li><a href="https://www.railstutorial.org/book">Ruby on Rails Tutorial (Rails 5) </a> by <a href="https://twitter.com/mhartl">Michael Hartl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>See Also <a href="https://hotframeworks.com/">HotFrameworks</a></p>
+<hr />
+<h3><a class="header" href="#data-visualization" id="data-visualization">Data Visualization</a></h3>
+<ul>
+<li>D3js/
+<ul>
+<li><a href="https://observablehq.com/@d3/learn-d3">ObservableHQ D3.js Tutorial</a> - Mike Bostock, Creator of D3.js.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#static-site-generators" id="static-site-generators">Static Site Generators:</a></h3>
+<ul>
+<li>
+<h4><a class="header" href="#sites" id="sites">Sites/</a></h4>
+<ul>
+<li><a href="https://www.staticgen.com/">StaticGen</a> - Top Open Source Static Site Generators.</li>
+<li><a href="https://headlesscms.org/">headlessCMS</a> - Top Content Management Systems for JAMstack sites.</li>
+<li><a href="https://www.netlifycms.org/">NetlifyCMS</a> - Open source content management for your Git workflow.</li>
+<li><a href="https://forestry.io/">Forestry</a> - A static CMS that commits.</li>
+<li><a href="https://gatsbyguides.com/">GatsbyGuides</a> - Build blazing fast web applications with Gatsby 101.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#databases" id="databases">DataBases:</a></h3>
+<ul>
+<li>
+<h4><a class="header" href="#sql" id="sql">SQL:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="http://www.sqltutorial.org/">SQL Tutorial</a></li>
+<li><a href="https://sqlbolt.com/">SQLBolt</a></li>
+<li><a href="https://sqlzoo.net/">SQLZOO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#postgresql" id="postgresql">PostgreSQL:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://www.postgresql.org/docs/">PostgreSQL Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><a class="header" href="#sqlite" id="sqlite">SQLite:</a></h4>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://sqlite.org/docs.html">SQLite Docs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#text-editors-and-ides" id="text-editors-and-ides">Text Editors and IDEs:</a></h3>
+<ul>
+<li>
+<p><a href="https://www.sublimetext.com/">Sublime Text</a></p>
+</li>
+<li>
+<p>Interactive Online Code Editors:</p>
+<ul>
+<li><a href="https://repl.it/">repl.it</a></li>
+<li><a href="https://scrimba.com/c/cKp6LhL">Scrimba</a> - HTML, CSS, JavaScript.</li>
+<li><a href="https://jsfiddle.net">JSFiddle</a> - HTML, CSS, JavaScript, CoffeeScript.</li>
+<li><a href="https://codepen.io/">CodePen</a> - HTML, CSS, JavaScript.</li>
+<li><a href="https://code.sololearn.com/">SoloLearn</a> - HTML, CSS, JavaScript.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#regular-expressions-and-algorithms" id="regular-expressions-and-algorithms">Regular Expressions and Algorithms:</a></h3>
+<ul>
+<li>Sites/
+<ul>
+<li><a href="https://pythex.org/">pythex.org</a> - a quick way to test your regular expressions.</li>
+<li><a href="https://regex101.com/">Regex101</a> - Online Regex Tester and Debugger.</li>
+<li><a href="https://www.regular-expressions.info/">Regular-Expressions.info</a></li>
+<li><a href="https://www.rexegg.com/">RexEgg</a></li>
+<li><a href="https://regexcrossword.com/">Regex Crossword</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#developer-tools" id="developer-tools">Developer Tools:</a></h3>
+<p>See More: <a href="https://gist.github.com/bradtraversy/61171a9b81586f5bc4c0ca1e2beb59ab">Gist by Brad Traversy</a></p>
+<ul>
+<li>
+<p>Sites/</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">MDN CSS Color Picker Tools</a> (<a href="https://duckduckgo.com/?t=ffab&amp;q=color+picker&amp;ia=answer">DuckDuckGo</a> Instant Answer/<a href="https://www.google.com/search?hl=en&amp;q=color%20picker">Google</a>)</li>
+<li><a href="https://www.danstools.com/">Dan's Tools</a> - Collection of various tools helpful for developers.</li>
+<li><a href="https://www.whoismyisp.org/">Who is my ISP?</a></li>
+</ul>
+</li>
+<li>
+<p>Design Tools/</p>
+<ul>
+<li><a href="https://logomakr.com/">LogoMakr</a> <code>freemium</code></li>
+<li><a href="https://www.figma.com/">Figma</a> - collaborative interface design tool <code>closed-source</code> <code>freemium</code></li>
+<li><a href="https://www.svgator.com">svgator</a> - SVG Animation Creator <code>commercial</code></li>
+<li><a href="https://neumorphism.io/">Neumorphism.io</a> - Soft UI CSS shadow generator.</li>
+</ul>
+</li>
+<li>
+<p>Speed Test/</p>
+<ul>
+<li><a href="https://www.speedtest.net/">Speedtest.net by Ookla</a></li>
+<li><a href="https://fast.com">Fast.com by Netflix</a></li>
+</ul>
+</li>
+<li>
+<p>Fake APIs/</p>
+<ul>
+<li><a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a> - Fake online REST API for developers</li>
+</ul>
+</li>
+<li>
+<p>Text Generators/</p>
+<ul>
+<li><a href="https://lipsum.com/">Lorem Ipsum</a></li>
+</ul>
+</li>
+<li>
+<p>Images/SVGs/</p>
+<ul>
+<li><a href="https://undraw.co/">unDraw</a> - Open-source illustrations for every project you can imagine</li>
+<li><a href="https://picsum.photos/">Lorem Picsum</a> - The Lorem Ipsum for photos.</li>
+<li><a href="https://flatuicolors.com/">Flat UI Colors</a> - 280 handpicked colors ready for COPY &amp; PASTE.</li>
+</ul>
+</li>
+<li>
+<p>Patterns/</p>
+<ul>
+<li><a href="https://www.heropatterns.com">Heropatterns</a> - A collection of repeatable SVG background patterns for you to use on your web projects.</li>
+<li><a href="https://coolbackgrounds.io/">Cool Backgrounds</a> - collection of tools to create compelling, colorful images for blogs and websites.</li>
+</ul>
+</li>
+<li>
+<p>Deployment/</p>
+<ul>
+<li><a href="https://www.cloudflare.com/">Cloudflare</a> - The Integrated Global Cloud Platform.</li>
+<li><a href="https://netlify.com">Netlify</a> -  Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more.</li>
+<li><a href="https://www.heroku.com/">Heroku</a> - Build data-driven apps with fully managed data services.</li>
+<li><a href="https://zeit.co/">ZEIT Now</a> - The easiest way to deploy websites.</li>
+<li><a href="https://surge.sh/">surge</a> - Static web publishing for Front-End Developers.</li>
+</ul>
+</li>
+<li>
+<p>CI/CD</p>
+<ul>
+<li><a href="https://travis-ci.org/">Travis-CI</a></li>
+<li><a href="https://circleci.com/">circleci</a></li>
+</ul>
+</li>
+<li>
+<p>API Testing/</p>
+<ul>
+<li><a href="https://www.postman.com/">Postman</a> - The Collaboration Platform for API Development.</li>
+</ul>
+</li>
+<li>
+<p>UI Inspiration/</p>
+<ul>
+<li><a href="https://webframe.xyz/">Webframe</a> - Beautiful Screenshots showing webapp designs.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a class="header" href="#extra-resources" id="extra-resources">Extra Resources:</a></h3>
+<ul>
+<li>
+<p>Codepen Profiles/</p>
+<ul>
+<li><a href="https://codepen.io/chriscoyier">Chris Coyier</a> - Founder of CSS-Tricks.</li>
+<li><a href="https://codepen.io/FlorinPop17">Florin Pop</a></li>
+<li><a href="https://codepen.io/hakimel">Hakim El Hattab</a> - Creator of reveal.js.</li>
+</ul>
+</li>
+<li>
+<p>Dribble Profiles/</p>
+<ul>
+<li><a href="https://dribbble.com/google">Google</a></li>
+</ul>
+</li>
+<li>
+<p>Sites/</p>
+<ul>
+<li><a href="https://web.dev/">web.dev</a> -  learn to build for the modern web.</li>
+<li><a href="https://www.sitepoint.com/">sitepoint</a></li>
+<li><a href="https://extensionworkshop.com/">Extension Workshop</a> - Get help creating and publishing Firefox add-ons that make browsing smarter, safer, and faster.</li>
+<li><a href="https://changelog.com/">The changelog</a></li>
+<li><a href="https://glitch.com/">Glitch</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/">DigitalOcean Community Tutorials</a></li>
+<li><a href="https://guide.freecodecamp.org/">freeCodeCamp Guide</a> - articles about all things related to programming.</li>
+<li><a href="https://rosettacode.org/wiki/Rosetta_Code">Rosetta Code</a></li>
+<li><a href="https://jamstack.org/">JAMstack</a> - JavaScript, APIs, and Markup</li>
+<li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a> - A computer science portal for geeks</li>
+<li><a href="https://tutsplus.com/">tuts+</a></li>
+<li><a href="https://thoughtbot.com/blog">thoughtbot Blog</a> - Giant Robots Smashing Into Other Giant Robots.</li>
+<li><a href="https://www.twilio.com/docs/tutorials">Twilio Tutorials</a></li>
+<li><a href="https://scotch.io/">scotch.io</a> - fun and practical web development tutorials.</li>
+<li><a href="https://pusher.com/tutorials">Pusher Developer Tutorials</a></li>
+<li><a href="https://cooperpress.com/">Cooperpress</a> - Weekly email newsletters to developers and software engineers.</li>
+<li><a href="https://blog.risingstack.com/">RisingStack Blog</a></li>
+</ul>
+</li>
+<li>
+<p>Pastebins</p>
+<ul>
+<li><a href="https://gist.github.com/">GitHub Gists</a> - Instantly share code, notes, and snippets.</li>
+<li><a href="https://pastebin.com/">Pastebin</a></li>
+<li><a href="https://paste.ubuntu.com/">Ubuntu Pastebin</a></li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../docs/knowledge-repositories.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../docs/programming.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../docs/knowledge-repositories.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../docs/programming.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

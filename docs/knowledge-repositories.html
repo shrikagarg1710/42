@@ -1,0 +1,619 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Knowledge Repositories - [ rsapkf / 42 ]</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 42</a></li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">2.</strong> docs/</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../docs/knowledge-repositories.html" class="active"><strong aria-hidden="true">2.1.</strong> Knowledge Repositories</a></li><li class="chapter-item expanded "><a href="../docs/web-development.html"><strong aria-hidden="true">2.2.</strong> Web Development</a></li><li class="chapter-item expanded "><a href="../docs/programming.html"><strong aria-hidden="true">2.3.</strong> Programming</a></li><li class="chapter-item expanded "><a href="../docs/open-source-software.html"><strong aria-hidden="true">2.4.</strong> Open Source Software</a></li><li class="chapter-item expanded "><a href="../docs/linux-configuration.html"><strong aria-hidden="true">2.5.</strong> Linux Configuration</a></li><li class="chapter-item expanded "><a href="../docs/privacy-tools.html"><strong aria-hidden="true">2.6.</strong> Privacy Tools</a></li><li class="chapter-item expanded "><a href="../docs/software-and-services.html"><strong aria-hidden="true">2.7.</strong> Software and Services</a></li><li class="chapter-item expanded "><a href="../docs/coding-challenges.html"><strong aria-hidden="true">2.8.</strong> Coding Challenges</a></li><li class="chapter-item expanded "><a href="../docs/science-technology-and-mathematics.html"><strong aria-hidden="true">2.9.</strong> Science, Technology and Mathematics</a></li><li class="chapter-item expanded "><a href="../docs/moocs-and-courses.html"><strong aria-hidden="true">2.10.</strong> Massive Open Online Courses</a></li><li class="chapter-item expanded "><a href="../docs/free-to-read-books-and-guides.html"><strong aria-hidden="true">2.11.</strong> Free-To-Read Books and Guides</a></li><li class="chapter-item expanded "><a href="../docs/cubing-puzzles-and-magic.html"><strong aria-hidden="true">2.12.</strong> Cubing, Puzzles and Magic</a></li><li class="chapter-item expanded "><a href="../docs/reddit.html"><strong aria-hidden="true">2.13.</strong> Reddit Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/youtube.html"><strong aria-hidden="true">2.14.</strong> YouTube Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/random-useful-sites.html"><strong aria-hidden="true">2.15.</strong> Random Useful Sites</a></li><li class="chapter-item expanded "><a href="../docs/ebooks-and-research-papers.html"><strong aria-hidden="true">2.16.</strong> Ebooks and Research Papers</a></li><li class="chapter-item expanded "><a href="../docs/high-school.html"><strong aria-hidden="true">2.17.</strong> High School</a></li><li class="chapter-item expanded "><a href="../docs/extras.html"><strong aria-hidden="true">2.18.</strong> Extras</a></li><li class="chapter-item expanded "><a href="../docs/unsorted.html"><strong aria-hidden="true">2.19.</strong> Unsorted</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../CONTRIBUTING.html"><strong aria-hidden="true">3.</strong> CONTRIBUTING</a></li><li class="chapter-item expanded "><a href="../LICENSE.html"><strong aria-hidden="true">4.</strong> LICENSE</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">[ rsapkf / 42 ]</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/rsapkf/42" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2><a class="header" href="#knowledge-repositories-mostly-on-github" id="knowledge-repositories-mostly-on-github">Knowledge Repositories (mostly on GitHub)</a></h2>
+<h3><a class="header" href="#linux" id="linux">Linux</a></h3>
+<ul>
+<li>
+<p><a href="https://github.com/awesome-selfhosted/awesome-selfhosted">awesome-selfhosted/awesome-selfhosted</a> - A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers.</p>
+</li>
+<li>
+<p><a href="https://github.com/luong-komorebi/Awesome-Linux-Software">luong-komorebi/Awesome-Linux-Software</a> - A list of awesome applications, software, tools and other materials for Linux distros.</p>
+</li>
+<li>
+<p><a href="https://github.com/k4m4/terminals-are-sexy">k4m4/terminals-are-sexy</a> - A curated list of Terminal frameworks, plugins &amp; resources for CLI lovers.</p>
+</li>
+<li>
+<p><a href="https://github.com/jlevy/the-art-of-command-line">jlevy/the-art-of-command-line</a> - Master the command line, in one page.</p>
+</li>
+<li>
+<p><a href="https://github.com/dylanaraps/pure-bash-bible">dylanaraps/pure-bash-bible</a> - A collection of pure bash alternatives to external processes.</p>
+</li>
+<li>
+<p><a href="https://github.com/learnbyexample/Command-line-text-processing">learnbyexample/Command-line-text-processing</a> - From finding text to search and replace, from sorting to beautifying text and more.</p>
+</li>
+<li>
+<p><a href="https://github.com/imthenachoman/How-To-Secure-A-Linux-Server">imthenachoman/How-To-Secure-A-Linux-Server</a> - An evolving how-to guide for securing a Linux server.</p>
+</li>
+<li>
+<p><a href="https://github.com/agarrharr/awesome-cli-apps">agarrharr/awesome-cli-apps</a> - A curated list of command line apps.</p>
+</li>
+<li>
+<p><a href="https://github.com/junaid33/opensource.builders">junaid33/opensource.builders</a> - Find open-source alternatives. https://opensource.builders.</p>
+</li>
+<li>
+<p><a href="https://github.com/mayfrost/guides">mayfrost/guides</a> - Looking for a guide? You came to the right place. Here you can find documentation for a variety of topics I research to make complex computing easier. For comments go to the IRC channel #nfo at the Rizon network.</p>
+</li>
+<li>
+<p><a href="https://github.com/chubin/awesome-console-services">chubin/awesome-console-services</a> - A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols).</p>
+</li>
+<li>
+<p><a href="https://github.com/cindyq/linuxjourney">cindyq/linuxjourney</a> - Learn the ways of Linux-fu, for free. https://linuxjourney.com.</p>
+</li>
+<li>
+<p>Vim</p>
+<ul>
+<li><a href="https://github.com/hakluke/how-to-exit-vim">hakluke/how-to-exit-vim</a> - Some simple methods for exiting vim.</li>
+<li><a href="https://github.com/vim-awesome/vim-awesome">vim-awesome/vim-awesome</a> - Awesome Vim plugins from across the universe. http://vimawesome.com.</li>
+<li><a href="https://github.com/rtorr/vim-cheat-sheet">rtorr/vim-cheat-sheet</a> - A mobile friendly Vim cheat sheet. https://vim.rtorr.com.</li>
+<li><a href="https://github.com/theicfire/vimsheet">theicfire/vimsheet</a> - Vim cheat sheet from beginners to pros. https://vimsheet.com.</li>
+<li><a href="https://github.com/vim-advent-calendar/vimways.org">vim-advent-calendar/vimways.org</a> - Vim-themed advent calendar. https://vimways.org.</li>
+</ul>
+</li>
+<li>
+<p>Emacs</p>
+<ul>
+<li><a href="https://github.com/emacs-tw/awesome-emacs">emacs-tw/awesome-emacs</a> - A community driven list of useful Emacs packages, libraries and others.</li>
+<li><a href="https://github.com/redguardtoo/mastering-emacs-in-one-year-guide">redguardtoo/mastering-emacs-in-one-year-guide</a> - Be great at emacs in one year.</li>
+</ul>
+</li>
+<li>
+<p>Shells</p>
+<ul>
+<li><a href="https://github.com/unixorn/awesome-zsh-plugins">unixorn/awesome-zsh-plugins</a> - A collection of ZSH frameworks, plugins, themes and tutorials.</li>
+</ul>
+</li>
+<li>
+<p>LaTeX</p>
+<ul>
+<li><a href="https://github.com/luong-komorebi/Begin-Latex-in-minutes">luong-komorebi/Begin-Latex-in-minutes</a> - Brief Intro to LaTeX for beginners that helps you use LaTeX with ease.</li>
+</ul>
+</li>
+<li>
+<p>Browser Customization</p>
+<ul>
+<li><a href="https://github.com/Aris-t2/CustomCSSforFx">Aris-t2/CustomCSSforFx</a> - Custom CSS tweaks for Firefox Quantum.</li>
+<li><a href="https://github.com/Timvde/UserChrome-Tweaks">Timvde/UserChrome-Tweaks</a> - A community maintained repository of userChrome.css tweaks for Firefox.</li>
+<li><a href="https://github.com/MrOtherGuy/firefox-csshacks">MrOtherGuy/firefox-csshacks</a> - Collection of userstyles affecting the browser.</li>
+</ul>
+</li>
+<li>
+<p>Dotfiles</p>
+<ul>
+<li><a href="https://github.com/search?q=dotfiles">GitHub Search &quot;dotfiles&quot;</a></li>
+<li><a href="https://github.com/webpro/awesome-dotfiles">webpro/awesome-dotfiles</a> - A curated list of dotfiles resources.</li>
+<li><a href="https://wiki.archlinux.org/index.php/Dotfiles">Dotfiles - ArchWiki</a></li>
+<li><a href="https://github.com/holman/dotfiles">holman/dotfiles</a> - Zach Holman's Dotfiles.</li>
+<li><a href="https://github.com/mathiasbynens/dotfiles">mathiasbynens/dotfiles</a> - Mathias Bynen's Dotfiles.</li>
+<li><a href="https://github.com/jessfraz/dotfiles">jessfraz/dotfiles</a> - Jess Frazelle's Dotfiles.</li>
+<li><a href="https://github.com/LukeSmithxyz/voidrice">LukeSmithxyz/voidrice</a> - Luke Smith's Dotfiles.</li>
+<li><a href="https://github.com/wincent/wincent">wincent/wincent</a> - Greg Hurrell's Dotfiles.</li>
+<li>(GitLab) <a href="https://gitlab.com/dwt1/dotfiles">dwt1/dotfiles</a> - Distrotube's Dotfiles</li>
+<li><a href="https://github.com/thoughtbot/dotfiles">thoughtbot/dotfiles</a> - A set of vim, zsh, git, and tmux configuration files.</li>
+<li><a href="https://github.com/dotfiles/dotfiles.github.com">dotfiles/dotfiles.github.com</a> - The unofficial guide to doing dotfiles on GitHub. http://dotfiles.github.io.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#regular-expressions-and-algorithms" id="regular-expressions-and-algorithms">Regular Expressions and Algorithms</a></h3>
+<ul>
+<li>
+<p><a href="https://github.com/ziishaned/learn-regex">ziishaned/learn-regex</a> - Learn regex the easy way.</p>
+</li>
+<li>
+<p><a href="https://github.com/ericdrowell/BigOCheatSheet">ericdrowell/BigOCheatSheet</a> - https://bigocheatsheet.com.</p>
+</li>
+<li>
+<p><a href="https://github.com/geongeorge/i-hate-regex">geongeorge/i-hate-regex</a> - The code for iHateregex.io - The Regex Cheat Sheet. https://iHateRegex.io.</p>
+</li>
+<li>
+<p><a href="https://github.com/firasdib/Regex101">firasdib/Regex101</a> - Online Regex Tester and Debugger. Issue Tracker for https://regex101.com.</p>
+</li>
+<li>
+<p>(GitLab) <a href="https://gitlab.com/javallone/regexper-static">javallone/regexper-static</a> - Regular Expression Visualization Site. https://regexper.com.</p>
+</li>
+</ul>
+<h3><a class="header" href="#python" id="python">Python</a></h3>
+<ul>
+<li><a href="https://github.com/donnemartin/interactive-coding-challenges">donnemartin/interactive-coding-challenges</a> - 120+ interactive Python coding interview challenges (algorithms and data structures). Includes Anki flashcards.</li>
+<li><a href="https://github.com/vinta/awesome-python">vinta/awesome-python</a> - A curated list of awesome Python frameworks, libraries, software and resources.</li>
+<li><a href="https://github.com/TheAlgorithms/Python">TheAlgorithms/Python</a> - All Algorithms implemented in Python.</li>
+<li><a href="https://github.com/faif/python-patterns">faif/python-patterns</a> - A collection of design patterns/idioms in Python.</li>
+<li><a href="https://github.com/cantaro86/Financial-Models-Numerical-Methods">cantaro86/Financial-Models-Numerical-Methods</a> - Collection of notebooks about quantitative finance, with interactive python code.</li>
+<li><a href="https://github.com/keon/algorithms">keon/algorithms</a> - Minimal examples of data structures and algorithms in Python.</li>
+<li><a href="https://github.com/satwikkansal/wtfpython">satwikkansal/wtfpython</a> - A collection of surprising Python snippets and lesser-known features.</li>
+<li><a href="https://github.com/mahmoud/awesome-python-applications">mahmoud/awesome-python-applications</a> - Free software that works great, and also happens to be open-source Python.</li>
+<li><a href="https://github.com/geekcomputers/Python">geekcomputers/Python</a> - @geekcomputers' Python Examples.</li>
+<li><a href="https://github.com/crazyguitar/pysheeet">crazyguitar/pysheeet</a> - Python Cheat Sheet.</li>
+<li><a href="https://github.com/machinelearningmindset/machine-learning-course">machinelearningmindset/machine-learning-course</a> - Machine Learning Course with Python. Refer to the course page for step-by-step explanations.</li>
+<li><a href="https://github.com/chrisalbon/notes">chrisalbon/notes</a> - Notes On Using Data Science &amp; Artificial Intelligence.</li>
+<li><a href="https://github.com/chrisalbon/code_py">chrisalbon/code_py</a> - A collection of well-commented code snippets for data science.</li>
+<li><a href="https://github.com/funkythings/python-cheat-sheet">funkythings/python-cheat-sheet</a> - Python Cheat Sheet NumPy, Matplotlib.</li>
+</ul>
+<h3><a class="header" href="#javascript" id="javascript">JavaScript</a></h3>
+<ul>
+<li><a href="https://github.com/airbnb/javascript">airbnb/javascript</a> - JavaScript Style Guide.</li>
+<li><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp/freeCodeCamp</a> - The https://www.freeCodeCamp.org open source codebase and curriculum. Learn to code for free together with millions of people.</li>
+<li><a href="https://github.com/trekhleb/javascript-algorithms">trekhleb/javascript-algorithms</a> - Algorithms and data structures implemented in JavaScript with explanations and links to further readings.</li>
+<li><a href="https://github.com/30-seconds/30-seconds-of-code">30-seconds/30-seconds-of-code</a> - Short JavaScript code snippets for all your development needs.</li>
+<li><a href="https://github.com/yangshun/awesome-spinners">yangshun/awesome-spinners</a> - A curated collection of dazzling web spinners.</li>
+<li><a href="https://github.com/wesbos/JavaScript30">wesbos/JavaScript30</a> - 30 Day Vanilla JS Challenge.</li>
+<li><a href="https://github.com/ryanmcdermott/clean-code-javascript">ryanmcdermott/clean-code-javascript</a> - Clean Code concepts adapted for JavaScript.</li>
+<li><a href="https://github.com/javascript-tutorial/en.javascript.info">javascript-tutorial/en.javascript.info</a> - Modern JavaScript Tutorial.</li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS</a> - A book series on JavaScript. @YDKJS on twitter.</li>
+<li><a href="https://github.com/leonardomso/33-js-concepts">leonardomso/33-js-concepts</a> - 33 concepts every JavaScript developer should know.</li>
+<li><a href="https://github.com/denysdovhan/wtfjs">denysdovhan/wtfjs</a> - A list of funny and tricky JavaScript examples.</li>
+<li><a href="https://github.com/mbeaudru/modern-js-cheatsheet">mbeaudru/modern-js-cheatsheet</a> - Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.</li>
+<li><a href="https://github.com/sorrycc/awesome-javascript">sorrycc/awesome-javascript</a> - A collection of awesome browser-side  JavaScript libraries, resources and shiny things.</li>
+<li><a href="https://github.com/lukehoban/es6features">lukehoban/es6features</a> - Overview of ECMAScript 6 features.</li>
+<li><a href="https://github.com/you-dont-need/You-Dont-Need-JavaScript">you-dont-need/You-Dont-Need-JavaScript</a> - CSS is powerful, you can do a lot of things without JS.</li>
+<li><a href="https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore">you-dont-need/You-Dont-Need-Lodash-Underscore</a> - List of JavaScript methods which you can use natively + ESLint Plugin.</li>
+<li><a href="https://github.com/you-dont-need/You-Dont-Need-Momentjs">you-dont-need/You-Dont-Need-Momentjs</a> - List of functions which you can use to replace moment.js + ESLint Plugin.</li>
+<li><a href="https://github.com/vlandham/js_data">vlandham/js_data</a> - Data manipulation and processing in JavaScript.</li>
+<li><a href="https://github.com/bradtraversy/vanillawebprojects">bradtraversy/vanillawebprojects</a> - Mini projects built with HTML5, CSS &amp; JavaScript. No frameworks or libraries.</li>
+<li><a href="https://github.com/dexteryy/spellbook-of-modern-webdev">dexteryy/spellbook-of-modern-webdev/</a> - A Big Picture, Thesaurus, and Taxonomy of Modern JavaScript Web Development.</li>
+<li><a href="https://github.com/usablica/front-end-frameworks">usablica/front-end-frameworks</a> - A collection of best front-end frameworks for faster and easier web development.</li>
+<li><a href="https://github.com/lydiahallie/javascript-questions">lydiahallie/javascript-questions</a> - A long list of (advanced) JavaScript questions, and their explanations.</li>
+<li><a href="https://github.com/phuoc-ng/1loc">phuoc-ng/1loc</a> - What's your favorite JavaScript single LOC (line of code)? https://1loc.dev.</li>
+<li><a href="https://github.com/phuoc-ng/html-dom">phuoc-ng/html-dom</a> - Common tasks of managing HTML DOM with vanilla JavaScript. https://htmldom.dev.</li>
+</ul>
+<h3><a class="header" href="#typescript" id="typescript">TypeScript</a></h3>
+<ul>
+<li><a href="https://github.com/DefinitelyTyped/DefinitelyTyped">DefinitelyTyped/DefinitelyTyped</a> - The repository for high quality TypeScript type definitions.</li>
+</ul>
+<h3><a class="header" href="#htmlcss" id="htmlcss">HTML/CSS</a></h3>
+<ul>
+<li><a href="https://github.com/joshbuchea/HEAD">joshbuchea/HEAD</a> - A list of everything that <em>could</em> go in the head of your document.</li>
+<li><a href="https://github.com/philipwalton/flexbugs">philipwalton/flexbugs</a> - A community-curated list of flexbox issues and cross-browser workarounds for them.</li>
+<li><a href="https://github.com/30-seconds/30-seconds-of-css">30-seconds/30-seconds-of-css</a> - &quot;Short CSS code snippets for all your development needs.</li>
+<li><a href="https://github.com/phuoc-ng/csslayout">phuoc-ng/csslayout</a> - A collection of popular layouts and patterns made with CSS. Now it has 90+ patterns and continues growing!</li>
+</ul>
+<h3><a class="header" href="#browser-add-onsextensions" id="browser-add-onsextensions">Browser Add-ons/Extensions</a></h3>
+<ul>
+<li><a href="https://github.com/mdn/webextensions-examples">mdn/webextensions-examples</a> - Example Firefox add-ons created using the WebExtensions API.</li>
+</ul>
+<h3><a class="header" href="#design" id="design">Design</a></h3>
+<ul>
+<li><a href="https://github.com/bradtraversy/design-resources-for-developers">bradtraversy/design-resources-for-developers</a> - Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more.</li>
+</ul>
+<h3><a class="header" href="#rust" id="rust">Rust</a></h3>
+<ul>
+<li><a href="https://github.com/phil-opp/blog_os">phil-opp/blog_os</a> - Writing an OS in Rust.</li>
+</ul>
+<h3><a class="header" href="#haskell" id="haskell">Haskell</a></h3>
+<ul>
+<li><a href="https://github.com/soupi/haskell-study-plan">soupi/haskell-study-plan</a> - An opinionated list of resources for learning Haskell.</li>
+</ul>
+<h3><a class="header" href="#elixir" id="elixir">Elixir</a></h3>
+<ul>
+<li><a href="https://github.com/elixirschool/elixirschool">elixirschool/elixirschool</a> - Premier destination to learn and master the Elixir programming language.</li>
+</ul>
+<h3><a class="header" href="#c" id="c">C</a></h3>
+<ul>
+<li><a href="https://github.com/DoctorWkt/acwj">DoctorWkt/acwj</a> - A Compiler Writing Journey.</li>
+<li><a href="https://github.com/cstack/db_tutorial">cstack/db_tutorial</a> - Writing a sqlite clone from scratch in C.</li>
+</ul>
+<h3><a class="header" href="#c-1" id="c-1">C++</a></h3>
+<ul>
+<li><a href="https://github.com/isocpp/CppCoreGuidelines">isocpp/CppCoreGuidelines</a> - The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding in C++.</li>
+</ul>
+<h3><a class="header" href="#go" id="go">Go</a></h3>
+<ul>
+<li><a href="https://github.com/hoanhan101/ultimate-go">hoanhan101/ultimate-go</a> - Ultimate Go study guide, with heavily documented code and programs analysis all in 1 place.</li>
+<li><a href="https://github.com/inconshreveable/ngrok">inconshreveable/ngrok</a> - Introspected tunnels to localhost. <code>unmaintained</code></li>
+</ul>
+<h3><a class="header" href="#java" id="java">Java</a></h3>
+<ul>
+<li><a href="https://github.com/iluwatar/java-design-patterns">iluwatar/java-design-patterns</a> - Design patterns implemented in Java.</li>
+<li><a href="https://github.com/teivah/algodeck">teivah/algodeck</a> - Algo Deck is an Open-Source Collection of +200 Algorithmic Cards to Help you Preparing your Algorithm &amp; Data Structure Interview.</li>
+<li><a href="https://github.com/williamfiset/Algorithms">williamfiset/Algorithms</a> - A collection of algorithms and data structures.</li>
+</ul>
+<h3><a class="header" href="#swift" id="swift">Swift</a></h3>
+<ul>
+<li><a href="https://github.com/raywenderlich/swift-algorithm-club">raywenderlich/swift-algorithm-club</a> - Algorithms and data structures in Swift, with explanations!</li>
+</ul>
+<h3><a class="header" href="#apis" id="apis">APIs</a></h3>
+<ul>
+<li><a href="https://github.com/microsoft/api-guidelines">microsoft/api-guidelines</a> - Microsoft REST API Guidelines.</li>
+<li><a href="https://github.com/public-apis/public-apis">public-apis/public-apis</a> - A collective list of free APIs for use in software and web development.</li>
+<li><a href="https://github.com/mledoze/countries">mledoze/countries</a> - World countries in JSON, CSV, XML and Yaml.</li>
+</ul>
+<h3><a class="header" href="#data-sciencescientific-computing" id="data-sciencescientific-computing">Data Science/Scientific Computing</a></h3>
+<ul>
+<li><a href="https://github.com/scipy-lectures/scipy-lecture-notes">scipy-lectures/scipy-lecture-notes</a> - Tutorial material on the scientific Python ecosystem.</li>
+<li><a href="https://github.com/abhat222/Data-Science--Cheat-Sheet">abhat222/Data-Science--Cheat-Sheet</a> - Cheat Sheets.</li>
+</ul>
+<h3><a class="header" href="#quantum-computing" id="quantum-computing">Quantum Computing</a></h3>
+<ul>
+<li><a href="https://github.com/microsoft/QuantumKatas">microsoft/QuantumKatas</a> - Tutorials and programming exercises for learning Q# and quantum computing.</li>
+</ul>
+<h3><a class="header" href="#ai-and-deep-learningmachine-learning" id="ai-and-deep-learningmachine-learning">AI and Deep Learning/Machine Learning</a></h3>
+<ul>
+<li><a href="https://github.com/openai/spinningup">openai/spinningup</a> - An educational resource to help anyone learn deep reinforcement learning.</li>
+<li><a href="https://github.com/practicalAI/practicalAI">practicalAI/practicalAI</a> - A practical approach to machine learning to enable everyone to learn, explore and build.</li>
+<li><a href="https://github.com/lexfridman/mit-deep-learning">lexfridman/mit-deep-learning</a> - Tutorials, assignments, and competitions for MIT Deep Learning related courses.</li>
+<li><a href="https://github.com/ageron/handson-ml">ageron/handson-ml</a> - A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow.</li>
+<li><a href="https://github.com/ageron/handson-ml2">ageron/handson-ml2</a> - A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in python using Scikit-Learn and TensorFlow 2.</li>
+<li><a href="https://github.com/eriklindernoren/ML-From-Scratch">eriklindernoren/ML-From-Scratch</a> -  Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning.</li>
+</ul>
+<h3><a class="header" href="#system-design" id="system-design">System Design</a></h3>
+<ul>
+<li><a href="https://github.com/donnemartin/system-design-primer">donnemartin/system-design-primer</a> - Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.</li>
+<li><a href="https://github.com/justinamiller/SoftwareArchitect">justinamiller/SoftwareArchitect</a> - Path to a Software Architect.</li>
+</ul>
+<h3><a class="header" href="#source-controlgit" id="source-controlgit">Source Control/Git</a></h3>
+<ul>
+<li><a href="https://github.com/progit/progit2">progit/progit2</a> - Pro Git 2nd Edition.</li>
+<li><a href="https://github.com/arslanbilal/git-cheat-sheet">arslanbilal/git-cheat-sheet</a> - git and git flow cheat sheet.</li>
+<li><a href="https://github.com/git-tips/tips">git-tips/tips</a> - Most commonly used git tips and tricks.</li>
+<li><a href="https://github.com/tiimgreen/github-cheat-sheet">tiimgreen/github-cheat-sheet</a> - A list of cool features of Git and GitHub.</li>
+<li><a href="https://github.com/github/gitignore">github/gitignore</a> - A collection of useful .gitignore templates.</li>
+<li><a href="https://github.com/firstcontributions/first-contributions">firstcontributions/first-contributions</a> - Help beginners to contribute to open source projects. https://firstcontributions.github.io.</li>
+<li><a href="https://github.com/github/training-kit">github/training-kit</a> - Open source cheat sheets for Git and GitHub. https://github.github.com/training-kit. </li>
+<li><a href="https://github.com/git/git-reference">git/git-reference</a> - Online Git Reference at http://git.github.io/git-reference.</li>
+<li><a href="https://github.com/rogerdudler/git-guide">rogerdudler/git-guide</a> - git - the simple guide. http://rogerdudler.github.com/git-guide.</li>
+</ul>
+<h3><a class="header" href="#open-source" id="open-source">Open Source</a></h3>
+<ul>
+<li><a href="https://github.com/freeCodeCamp/how-to-contribute-to-open-source">freeCodeCamp/how-to-contribute-to-open-source</a> - A guide to contributing to open source.</li>
+<li><a href="https://github.com/github/choosealicense.com">github/choosealicense.com</a> - A site to provide non-judgmental guidance on choosing a license for your open source project. https://choosealicense.com.</li>
+<li><a href="https://github.com/github/opensource.guide">github/opensource.guide</a> - Community guides for open source creators. https://opensource.guide.</li>
+</ul>
+<h3><a class="header" href="#tensorflow" id="tensorflow">Tensorflow</a></h3>
+<ul>
+<li><a href="https://github.com/aymericdamien/TensorFlow-Examples">aymericdamien/TensorFlow-Examples</a> - TensorFlow Tutorial and Examples for Beginners (support TF v1 &amp; v2).</li>
+<li><a href="https://github.com/tensorflow/models">tensorflow/models</a> - Models and examples built with TensorFlow.</li>
+</ul>
+<h3><a class="header" href="#system-administrationsite-reliabilityproduction-engineering" id="system-administrationsite-reliabilityproduction-engineering">System Administration/Site Reliability/Production Engineering</a></h3>
+<ul>
+<li><a href="https://github.com/kahun/awesome-sysadmin">kahun/awesome-sysadmin</a> - A curated list of amazingly awesome open source sysadmin resources inspired by Awesome PHP.</li>
+<li><a href="https://github.com/dastergon/awesome-sre">dastergon/awesome-sre</a> - A curated list of Site Reliability and Production Engineering resources. https://sre.xyz.</li>
+</ul>
+<h3><a class="header" href="#cheatsheets" id="cheatsheets">Cheatsheets</a></h3>
+<ul>
+<li><a href="https://github.com/Kapeli/cheatsheets">Kapeli/cheatsheets</a> - Collection of Dash cheat sheets https://kapeli.com/cheatsheets.</li>
+<li><a href="https://github.com/Kapeli/Dash-User-Contributions">Kapeli/Dash-User-Contributions</a> - Dash repo of user contributed docsets.</li>
+<li><a href="https://github.com/rstacruz/cheatsheets">rstacruz/cheatsheets</a> - @rstacruz's cheatsheets. https://devhints.io.</li>
+</ul>
+<h3><a class="header" href="#privacy-and-security" id="privacy-and-security">Privacy and Security</a></h3>
+<ul>
+<li><a href="https://github.com/privacytoolsIO/privacytools.io">privacytoolsIO/privacytools.io</a> - You are being watched. Protect your privacy against global mass surveillance. https://privacytools.io.</li>
+<li><a href="https://github.com/OWASP/CheatSheetSeries">OWASP/CheatSheetSeries</a> - The OWASP Cheat Sheet Series was created to provide a concise collection of high value information on specific application security topics.</li>
+</ul>
+<h3><a class="header" href="#penetration-testing" id="penetration-testing">Penetration Testing</a></h3>
+<ul>
+<li><a href="https://github.com/Hack-with-Github/Awesome-Hacking">Hack-with-Github/Awesome-Hacking</a> - A collection of various awesome lists for hackers, pentesters and security researchers.</li>
+<li><a href="https://github.com/danielmiessler/SecLists">danielmiessler/SecLists</a> - SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.</li>
+<li><a href="https://github.com/OlivierLaflamme/Cheatsheet-God">OlivierLaflamme/Cheatsheet-God</a> - Penetration Testing Reference Bank - OSCP / PTP &amp; PTX Cheatsheet.</li>
+<li><a href="https://github.com/juliocesarfort/public-pentesting-reports">juliocesarfort/public-pentesting-reports</a> - Curated list of public penetration test reports released by several consulting firms and academic security groups.</li>
+<li><a href="https://github.com/StevenBlack/hosts">StevenBlack/hosts</a> - Extending and consolidating hosts files from several well-curated sources like adaway.org, mvps.org, malwaredomainlist.com, someonewhocares.org, and potentially others. You can optionally invoke extensions to block additional sites by category.</li>
+<li><a href="https://github.com/SundownDEV/hacker-roadmap">SundownDEV/hacker-roadmap</a> - A guide for amateurs pen testers and a collection of hacking tools, resources and references to practice ethical hacking, pen testing and web security.</li>
+<li><a href="https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters">nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters</a> - A list of resources for those interested in getting started in bug bounties.</li>
+</ul>
+<h3><a class="header" href="#decentralization" id="decentralization">Decentralization</a></h3>
+<ul>
+<li><a href="https://github.com/redecentralize/alternative-internet">redecentralize/alternative-internet</a> - A collection of interesting new networks and tech aiming at decentralisation (in some form).</li>
+</ul>
+<h3><a class="header" href="#video-production" id="video-production">Video Production</a></h3>
+<ul>
+<li><a href="https://github.com/leandromoreira/digital_video_introduction">leandromoreira/digital_video_introduction</a> - A hands-on introduction to video technology: image, video, codec (av1, vp9, h265) and more (ffmpeg encoding).</li>
+</ul>
+<h3><a class="header" href="#natural-language-processing" id="natural-language-processing">Natural Language Processing</a></h3>
+<ul>
+<li><a href="https://github.com/microsoft/nlp-recipes">microsoft/nlp-recipes</a> - Natural Language Processing Best Practices &amp; Examples.</li>
+</ul>
+<h3><a class="header" href="#interviewingjobs" id="interviewingjobs">Interviewing/Jobs</a></h3>
+<ul>
+<li><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions">h5bp/Front-end-Developer-Interview-Questions</a> - A list of helpful front-end related questions you can use to interview potential candidates, test yourself or completely ignore.</li>
+<li><a href="https://github.com/yangshun/front-end-interview-handbook">yangshun/front-end-interview-handbook</a> - Almost complete answers to &quot;Front-end Job Interview Questions&quot; which you can use to interview potential candidates, test yourself or completely ignore.</li>
+<li><a href="https://github.com/jwasham/coding-interview-university">jwasham/coding-interview-university</a> - A complete computer science study plan to become a software engineer.</li>
+<li><a href="https://github.com/viraptor/reverse-interview">viraptor/reverse-interview</a> - Questions to ask the company during your interview.</li>
+<li><a href="https://github.com/kdn251/interviews">kdn251/interviews</a> - Everything you need to know to get the job.</li>
+<li><a href="https://github.com/remoteintech/remote-jobs">remoteintech/remote-jobs</a> - A list of semi to fully remote-friendly companies in tech.</li>
+<li><a href="https://github.com/lukasz-madon/awesome-remote-job/">lukasz-madon/awesome-remote-job</a> - A curated list of awesome remote jobs and resources.</li>
+</ul>
+<h3><a class="header" href="#macosios" id="macosios">macOS/iOS</a></h3>
+<ul>
+<li><a href="https://github.com/serhii-londar/open-source-mac-os-apps">serhii-londar/open-source-mac-os-apps</a> - 🚀 Awesome list of open source applications for macOS.</li>
+<li><a href="https://github.com/dkhamsing/open-source-ios-apps">dkhamsing/open-source-ios-apps</a> - Collaborative List of Open-Source iOS Apps.</li>
+<li><a href="https://github.com/nikitavoloboev/my-mac-os">nikitavoloboev/my-mac-os</a> - List of applications and tools that make my macOS experience even more amazing.</li>
+<li><a href="https://github.com/learn-anything/alfred-workflows">learn-anything/alfred-workflows</a> - Amazing Alfred Workflows.</li>
+<li><a href="https://github.com/zenorocha/alfred-workflows">zenorocha/alfred-workflows</a> - A collection of Alfred 3 and 4 workflows that will rock your world.</li>
+</ul>
+<h3><a class="header" href="#project-based-learning" id="project-based-learning">Project Based Learning</a></h3>
+<ul>
+<li><a href="https://github.com/danistefanovic/build-your-own-x">danistefanovic/build-your-own-x</a> - 🤓 Build your own (insert technology here).</li>
+<li><a href="https://github.com/karan/Projects">karan/Projects</a> - A list of practical projects that anyone can solve in any programming language.</li>
+<li><a href="https://github.com/tuvtran/project-based-learning">tuvtran/project-based-learning</a> - Curated list of project-based tutorials.</li>
+<li><a href="https://github.com/florinpop17/app-ideas">florinpop17/app-ideas</a> - A Collection of application ideas which can be used to improve your coding skills.</li>
+<li><a href="https://github.com/AlgoryL/Projects-from-Scratch">AlgoryL/Projects-from-Scratch</a> - Read and do projects.</li>
+</ul>
+<h3><a class="header" href="#computer-science" id="computer-science">Computer Science</a></h3>
+<ul>
+<li><a href="https://github.com/ossu/computer-science">ossu/computer-science</a> -  Path to a free self-taught education in Computer Science!</li>
+<li><a href="https://github.com/ForrestKnight/open-source-cs">ForrestKnight/open-source-cs</a> - Open Source CS Curriculum. </li>
+<li><a href="https://github.com/P1xt/p1xt-guides">P1xt/p1xt-guides</a> - Programming curricula.</li>
+</ul>
+<h3><a class="header" href="#coursesbooks" id="coursesbooks">Courses/Books</a></h3>
+<ul>
+<li><a href="https://github.com/EbookFoundation/free-programming-books">EbookFoundation/free-programming-books</a> - Freely available programming books.</li>
+<li><a href="https://github.com/papers-we-love/papers-we-love">papers-we-love/papers-we-love</a> - Papers from the computer science community to read and discuss. https://paperswelove.org.</li>
+<li><a href="https://github.com/mikesprague/udacity-nanodegrees">mikesprague/udacity-nanodegrees</a> - List of Udacity Nanodegree programs with links to the free courses in their curricula.</li>
+<li><a href="https://github.com/Yorko/mlcourse.ai">Yorko/mlcourse.ai</a> - Open Machine Learning Course.</li>
+<li><a href="https://github.com/missing-semester/missing-semester">missing-semester/missing-semester</a> - The Missing Semester of Your CS Education. https://missing.csail.mit.edu.</li>
+<li><a href="https://github.com/jakevdp/PythonDataScienceHandbook">jakevdp/PythonDataScienceHandbook</a> - Python Data Science Handbook: full text in Jupyter Notebooks.</li>
+<li><a href="https://github.com/GoogleChrome/essential-image-optimization">GoogleChrome/essential-image-optimization</a> - Essential Image Optimization - an eBook. https://images.guide.</li>
+<li><a href="https://github.com/fastai/fastbook">fastai/fastbook</a> - Draft of the fastai book.</li>
+<li><a href="https://github.com/zero-equals-false/awesome-programming-books">zero-equals-false/awesome-programming-books</a> -  A curated list of awesome programming books.</li>
+</ul>
+<h3><a class="header" href="#books-code" id="books-code">Books Code</a></h3>
+<ul>
+<li><a href="https://github.com/realpython/materials">realpython/materials</a> - Bonus materials, exercises, and example projects for RealPython tutorials. https://realpython.com.</li>
+<li><a href="https://github.com/fluentpython/example-code">fluentpython/example-code</a> - Example code for the book Fluent Python.</li>
+<li><a href="https://github.com/bslatkin/effectivepython">bslatkin/effectivepython</a> - Effective Python: Second Edition — Source Code and Errata for the Book.</li>
+<li><a href="https://github.com/kevin-wayne/algs4">kevin-wayne/algs4</a> - Algorithms, 4th edition textbook code and libraries.</li>
+</ul>
+<h3><a class="header" href="#general" id="general">General</a></h3>
+<ul>
+<li><a href="https://github.com/search?q=awesome">GitHub Search 'awesome'</a></li>
+<li><a href="https://github.com/explore">GitHub Explore</a></li>
+<li><a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a> - 😎 Awesome lists about all kinds of interesting topics.</li>
+<li><a href="https://github.com/jnv/lists">jnv/lists</a> - The definitive list of lists (of lists) curated on GitHub and elsewhere.</li>
+<li><a href="https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer">bmorelli25/Become-A-Full-Stack-Web-Developer</a> - Free resources for learning Full Stack Web Development.</li>
+<li><a href="https://github.com/hellerve/programming-talks">hellerve/programming-talks</a> - Awesome &amp; interesting talks about programming.</li>
+<li><a href="https://github.com/Developer-Y/cs-video-courses">Developer-Y/cs-video-courses</a> - List of Computer Science courses with video lectures.</li>
+<li><a href="https://github.com/chrislgarry/Apollo-11">chrislgarry/Apollo-11</a> - Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.</li>
+<li><a href="https://github.com/LisaDziuba/Awesome-Design-Tools">LisaDziuba/Awesome-Design-Tools </a> - The best design tools and plugins for everything.</li>
+<li><a href="https://github.com/dastergon/awesome-chaos-engineering">dastergon/awesome-chaos-engineering</a> - A curated list of Chaos Engineering resources.</li>
+<li><a href="https://github.com/mtdvio/every-programmer-should-know">mtdvio/every-programmer-should-know</a> - A collection of (mostly) technical things every software developer should know.</li>
+<li><a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit">sdmg15/Best-websites-a-programmer-should-visit</a> - Some useful websites for programmers.</li>
+<li><a href="https://github.com/rShetty/awesome-podcasts">rShetty/awesome-podcasts</a> - Collection of awesome podcasts.</li>
+<li><a href="https://github.com/gothinkster/realworld">gothinkster/realworld</a> - &quot;The mother of all demo apps&quot; — Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more 🏅.</li>
+<li><a href="https://github.com/adambard/learnxinyminutes-docs">adambard/learnxinyminutes-docs</a> - Code documentation written as code! How novel and totally my idea!.</li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets">awesomedata/awesome-public-datasets</a> - A topic-centric list of HQ open datasets.</li>
+<li><a href="https://github.com/trimstray/the-book-of-secret-knowledge">trimstray/the-book-of-secret-knowledge</a> - A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.</li>
+<li><a href="https://github.com/dwmkerr/hacker-laws">dwmkerr/hacker-laws</a> - Laws, Theories, Principles and Patterns that developers will find useful.</li>
+<li><a href="https://github.com/learn-anything/learn-anything">learn-anything/learn-anything</a> - Organize world's knowledge, explore connections and curate learning paths.</li>
+<li><a href="https://github.com/kdeldycke/awesome-falsehood">kdeldycke/awesome-falsehood</a> - Curated list of falsehoods programmers believe in.</li>
+<li><a href="https://github.com/google/eng-practices">google/eng-practices</a> - Google's Engineering Practices documentation.</li>
+<li><a href="https://github.com/ripienaar/free-for-dev">ripienaar/free-for-dev</a> - A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev. https://free-for.dev.</li>
+<li><a href="https://github.com/dumb-password-rules/dumb-password-rules">dumb-password-rules/dumb-password-rules</a> - Shaming sites with dumb password rules.</li>
+<li><a href="https://github.com/psenough/teach_yourself_demoscene_in_14_days">psenough/teach_yourself_demoscene_in_14_days</a> - guidebook idea from <a href="http://www.pouet.net/topic.php?which=10882&amp;page=1">here</a>.</li>
+<li><a href="https://github.com/heroku/12factor">heroku/12factor</a> - 12factor.net.</li>
+<li><a href="https://github.com/Igglybuff/awesome-piracy">Igglybuff/awesome-piracy</a> - A curated list of awesome warez and piracy links.</li>
+<li><a href="https://github.com/jondot/awesome-react-native">jondot/awesome-react-native</a> - Awesome React Native components, news, tools, and learning material!</li>
+<li><a href="https://github.com/fpereiro/backendlore">fpereiro/backendlore</a> - How I write backends.</li>
+<li><a href="https://github.com/lirantal/nodejs-cli-apps-best-practices">lirantal/nodejs-cli-apps-best-practices</a> - The largest Node.js CLI Apps best practices list.</li>
+<li><a href="https://github.com/semver/semver">semver/semver</a> - Semantic Versioning Specification.</li>
+<li><a href="https://github.com/erikwiffin/0.30000000000000004">erikwiffin/0.30000000000000004</a> - Floating Point Math Examples.</li>
+<li><a href="https://github.com/olivierlacan/keep-a-changelog">olivierlacan/keep-a-changelog</a> - If you build software, keep a changelog.</li>
+<li><a href="https://github.com/carloscuesta/gitmoji">carloscuesta/gitmoji</a> - An emoji guide for your commit messages.</li>
+<li><a href="https://github.com/ErikCH/DevYouTubeList">ErikCH/DevYouTubeList</a> - List of Development YouTube Channels.</li>
+<li><a href="https://github.com/jlevy/og-equity-compensation">jlevy/og-equity-compensation</a> - Stock options, RSUs, taxes — read the latest edition: https://holloway.com/g/equity-compensation.</li>
+<li><a href="https://github.com/thibmaek/awesome-raspberry-pi">thibmaek/awesome-raspberry-pi</a> - A curated list of awesome Raspberry Pi tools, projects, images and resources.</li>
+<li><a href="https://github.com/alebcay/awesome-shell">alebcay/awesome-shell</a> - A curated list of awesome command-line frameworks, toolkits, guides and gizmos.</li>
+<li><a href="https://github.com/2factorauth/twofactorauth">2factorauth/twofactorauth</a> - List of sites with two factor auth support which includes SMS, email, phone calls, hardware, and software.</li>
+<li><a href="https://github.com/pirate/wireguard-docs">pirate/wireguard-docs</a> - Unofficial WireGuard Documentation: Setup, Usage, Configuration, and full example setups for VPNs supporting both servers &amp; roaming clients.</li>
+<li><a href="https://github.com/linode/docs">linode/docs</a> - Linode guides and tutorials. https://linode.com/docs.</li>
+<li><a href="https://github.com/danluu/post-mortems">danluu/post-mortems</a> - A collection of postmortems.</li>
+<li><a href="https://github.com/luruke/browser-2020">luruke/browser-2020</a> - Things you can do with a browser in 2020.</li>
+<li><a href="https://github.com/clarkgrubb/hyperpolyglot">clarkgrubb/hyperpolyglot</a> - commonly used features in a side-by-side format. https://hyperpolyglot.org.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../docs/web-development.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../docs/web-development.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

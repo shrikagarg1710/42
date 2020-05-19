@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>YouTube Subscriptions - [ rsapkf / 42 ]</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 42</a></li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">2.</strong> docs/</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../docs/knowledge-repositories.html"><strong aria-hidden="true">2.1.</strong> Knowledge Repositories</a></li><li class="chapter-item expanded "><a href="../docs/web-development.html"><strong aria-hidden="true">2.2.</strong> Web Development</a></li><li class="chapter-item expanded "><a href="../docs/programming.html"><strong aria-hidden="true">2.3.</strong> Programming</a></li><li class="chapter-item expanded "><a href="../docs/open-source-software.html"><strong aria-hidden="true">2.4.</strong> Open Source Software</a></li><li class="chapter-item expanded "><a href="../docs/linux-configuration.html"><strong aria-hidden="true">2.5.</strong> Linux Configuration</a></li><li class="chapter-item expanded "><a href="../docs/privacy-tools.html"><strong aria-hidden="true">2.6.</strong> Privacy Tools</a></li><li class="chapter-item expanded "><a href="../docs/software-and-services.html"><strong aria-hidden="true">2.7.</strong> Software and Services</a></li><li class="chapter-item expanded "><a href="../docs/coding-challenges.html"><strong aria-hidden="true">2.8.</strong> Coding Challenges</a></li><li class="chapter-item expanded "><a href="../docs/science-technology-and-mathematics.html"><strong aria-hidden="true">2.9.</strong> Science, Technology and Mathematics</a></li><li class="chapter-item expanded "><a href="../docs/moocs-and-courses.html"><strong aria-hidden="true">2.10.</strong> Massive Open Online Courses</a></li><li class="chapter-item expanded "><a href="../docs/free-to-read-books-and-guides.html"><strong aria-hidden="true">2.11.</strong> Free-To-Read Books and Guides</a></li><li class="chapter-item expanded "><a href="../docs/cubing-puzzles-and-magic.html"><strong aria-hidden="true">2.12.</strong> Cubing, Puzzles and Magic</a></li><li class="chapter-item expanded "><a href="../docs/reddit.html"><strong aria-hidden="true">2.13.</strong> Reddit Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/youtube.html" class="active"><strong aria-hidden="true">2.14.</strong> YouTube Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/random-useful-sites.html"><strong aria-hidden="true">2.15.</strong> Random Useful Sites</a></li><li class="chapter-item expanded "><a href="../docs/ebooks-and-research-papers.html"><strong aria-hidden="true">2.16.</strong> Ebooks and Research Papers</a></li><li class="chapter-item expanded "><a href="../docs/high-school.html"><strong aria-hidden="true">2.17.</strong> High School</a></li><li class="chapter-item expanded "><a href="../docs/extras.html"><strong aria-hidden="true">2.18.</strong> Extras</a></li><li class="chapter-item expanded "><a href="../docs/unsorted.html"><strong aria-hidden="true">2.19.</strong> Unsorted</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../CONTRIBUTING.html"><strong aria-hidden="true">3.</strong> CONTRIBUTING</a></li><li class="chapter-item expanded "><a href="../LICENSE.html"><strong aria-hidden="true">4.</strong> LICENSE</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">[ rsapkf / 42 ]</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/rsapkf/42" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#moocs" id="moocs">MOOCs</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCBa5G_ESCn8Yd4vw5U-gIcg">stanfordonline</a></li>
+<li><a href="https://www.youtube.com/channel/UCEBb1b_L6zDS3xTUrIALZOw">MIT OpenCourseWare</a></li>
+<li><a href="https://www.youtube.com/channel/UC4a-Gbdw7vOaccHmFo40b9g">Khan Academy</a></li>
+<li><a href="https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA">CS50</a></li>
+<li><a href="https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q">CrashCourse</a></li>
+</ul>
+<h3><a class="header" href="#programming" id="programming">Programming</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCNIkB2IeJ-6AmZv7bQ1oBYg">Arxiv Insights</a></li>
+<li><a href="https://www.youtube.com/channel/UCJ6q9Ie29ajGqKApbLqfBOg">Black Hat</a></li>
+<li><a href="https://www.youtube.com/channel/UCZUyPT9DkJWmS_DzdOi7RIA">Caleb Curry</a></li>
+<li><a href="https://www.youtube.com/channel/UCaO6VoaYJv4kS-TQO_M-N_g">Clément Mihailescu</a></li>
+<li><a href="https://www.youtube.com/channel/UCLNgu_OupwoeESgtab33CCw">Coding Garden with CJ</a></li>
+<li><a href="https://www.youtube.com/channel/UCrqAGUPPMOdo0jfQ6grikZw">Colt Steele</a></li>
+<li><a href="https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA">Computerphile</a></li>
+<li><a href="https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g">Corey Schafer</a></li>
+<li><a href="https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w">Deeplearning.ai</a></li>
+<li><a href="https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow">DesignCourse</a></li>
+<li><a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q">Dev Ed</a></li>
+<li><a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA">Fireship</a></li>
+<li><a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q">Fun Fun Function</a></li>
+<li><a href="https://www.youtube.com/channel/UC7c3Kb6jYCRj4JOHHZTxKsQ">GitHub</a></li>
+<li><a href="https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw">Google Developers</a></li>
+<li><a href="https://www.youtube.com/channel/UCK8sQmJBp8GCxrOtXWBpyEA">Google</a></li>
+<li><a href="https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w">LiveOverflow</a></li>
+<li><a href="https://www.youtube.com/channel/UCV0qA-eDDICsRR9rPcnG7tw">Joma Tech</a></li>
+<li><a href="https://www.youtube.com/channel/UC-91UA-Xy2Cvb98deRXuggA">Joshua Fluke</a></li>
+<li><a href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw">Kevin Powell</a></li>
+<li><a href="https://www.youtube.com/channel/UCyU5wkjgQYGRB0hIHMwm2Sg">LevelUpTuts</a></li>
+<li><a href="https://www.youtube.com/channel/UCh5UlGiu9d6LegIeUCW4N1w">Mozilla Developer</a></li>
+<li><a href="https://www.youtube.com/channel/UCijjo5gfAscWgNCKFHWm1EA">Mozilla Hacks</a></li>
+<li><a href="https://www.youtube.com/channel/UCshZ3rdoCLjDYuTR_RBubzw">Program With Erik</a></li>
+<li><a href="https://www.youtube.com/channel/UC54NcJvLCvM2CNaBjd5j6HA">RealToughCandy</a></li>
+<li><a href="https://www.youtube.com/channel/UCh27N8m4Jp_rkwx26Q4iclQ">Steven Skiena</a></li>
+<li><a href="https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg">Tech With Tim</a></li>
+<li><a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">The Coding Train</a></li>
+<li><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg">The Net Ninja</a></li>
+<li><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</a></li>
+<li><a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw">Web Dev Simplified</a></li>
+<li><a href="https://www.youtube.com/channel/UCzyuZJ8zZ-Lhfnz41DG5qLw">mmtuts</a></li>
+<li><a href="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ">sentdex</a></li>
+<li><a href="https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ">TensorFlow</a></li>
+<li><a href="https://www.youtube.com/channel/UCoebwHSTvwalADTJhps0emA">Wes Bos</a></li>
+<li><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp.org</a></li>
+<li><a href="https://www.youtube.com/channel/UC4UJ26WkceqONNF5S26OiVw">deeplizard</a></li>
+</ul>
+<h3><a class="header" href="#linux" id="linux">Linux</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg">DistroTube</a></li>
+<li><a href="https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA">Luke Smith</a></li>
+<li><a href="https://www.youtube.com/channel/UCkK9UDm_ZNrq_rIXCz3xCGA">Bryan Lunduke</a></li>
+<li><a href="https://www.youtube.com/channel/UCg6gPGh8HU2U01vaFCAsvmQ">Chris Titus Tech</a></li>
+<li><a href="https://www.youtube.com/channel/UCvA_wgsX6eFAOXI8Rbg_WiQ">tutoriaLinux</a></li>
+<li><a href="https://www.youtube.com/channel/UCsnGwSIHyoYN0kiINAGUKxg">Wolfgang's Channel</a></li>
+<li><a href="https://www.youtube.com/channel/UCkf4VIqu3Acnfzuk3kRIFwA">gotbletu</a></li>
+<li><a href="https://www.youtube.com/channel/UCv1Kcz-CuGM6mxzL3B1_Eiw">The Linux Gamer</a></li>
+</ul>
+<h3><a class="header" href="#science" id="science">Science</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UC2LZO6swZ9SLUEOks3WnsfA">2veritasium</a></li>
+<li><a href="https://www.youtube.com/channel/UCiDJtJKMICpb9B1qf7qjEOA">Adam Savage's Tested</a></li>
+<li><a href="https://www.youtube.com/channel/UCnFmWQbVW_YbqPQZGNuq8sA">Andrew Dotson</a></li>
+<li><a href="https://www.youtube.com/channel/UCivA7_KLKWo43tFcCkFvydw">Applied Science</a></li>
+<li><a href="https://www.youtube.com/channel/UCC552Sd-3nyi_tk2BudLUzA">AsapSCIENCE</a></li>
+<li><a href="https://www.youtube.com/channel/UCwmZiChSryoWQCZMIQezgTg">BBC Earth</a></li>
+<li><a href="https://www.youtube.com/channel/UC6E2mP01ZLH_kbAyeazCNdg">Brave Wilderness</a></li>
+<li><a href="https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w">CGP Grey</a></li>
+<li><a href="https://www.youtube.com/channel/UCo-3ThNQmPmQSQL_L6Lx1_w">DeepSkyVideos</a></li>
+<li><a href="https://www.youtube.com/channel/UCMu5gPmKp5av0QCAajKTMhw">ERB</a></li>
+<li><a href="https://www.youtube.com/channel/UCaut53cnrdipyo47R-a3tEw">ERB2</a></li>
+<li><a href="https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA">ElectroBOOM</a></li>
+<li><a href="https://www.youtube.com/channel/UClqhvGmHcvWL9w3R48t9QXQ">Engineering Explained</a></li>
+<li><a href="https://www.youtube.com/channel/UCliSRiiRVQuDfgxI_QN_Fmw">For the Allure of Physics</a></li>
+<li><a href="https://www.youtube.com/channel/UCmmPgObSUPw1HL2lq6H4ffA">Geography Now</a></li>
+<li><a href="https://www.youtube.com/channel/UCuCkxoKLYO_EQ2GeFtbM_bw">Half as Interesting</a></li>
+<li><a href="https://www.youtube.com/channel/UCI4I6ldZ0jWe7vXpUVeVcpg">Household Hacker</a></li>
+<li><a href="https://www.youtube.com/channel/UCZFipeZtQM5CKUjx6grh54g">Isaac Arthur</a></li>
+<li><a href="https://www.youtube.com/channel/UCH4BNI0-FOK2dMXoFtViWHw">It's Okay To Be Smart</a></li>
+<li><a href="https://www.youtube.com/channel/UCiEHVhv0SBMpP75JbzJShqw">Lectures by Walter Lewin. They will make you ♥ Physics.</a></li>
+<li><a href="https://www.youtube.com/channel/UCsXVk37bltHxD1rDPwtNM8Q">Kurzgesagt -- In a Nutshell</a></li>
+<li><a href="https://www.youtube.com/channel/UCIRiWCPZoUyZDbydIqitHtQ">Mike Boyd</a></li>
+<li><a href="https://www.youtube.com/channel/UCeiYXex_fwgYDonaTcSIk6w">MinuteEarth</a></li>
+<li><a href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg">Mark Rober</a></li>
+<li><a href="https://www.youtube.com/channel/UCFk__1iexL3T5gvGcMpeHNA">Looking Glass Universe</a></li>
+<li><a href="https://www.youtube.com/channel/UCLA_DiR1FfKNvjuUpBHmylQ">NASA</a></li>
+<li><a href="https://www.youtube.com/channel/UCfzLXKMZqf8-nR920SbQJLA">yeti dynamics</a></li>
+<li><a href="https://www.youtube.com/channel/UC1VLQPn9cYSqx8plbk9RxxQ">The Action Lab</a></li>
+<li><a href="https://www.youtube.com/channel/UCEIwxahdLz7bap-VDs9h35A">Steve Mould</a></li>
+<li><a href="https://www.youtube.com/channel/UCqoAEDirJPjEUFcF2FklnBA">StarTalk</a></li>
+<li><a href="https://www.youtube.com/channel/UCtwKon9qMt5YLVgQt1tvJKg">Objectivity</a></li>
+<li><a href="https://www.youtube.com/channel/UCzR-rom72PHN9Zg7RML9EbA">PBS Eons</a></li>
+<li><a href="https://www.youtube.com/channel/UCs4aHmggTfFrpkPcWSaBN9g">PBS Infinite Series</a></li>
+<li><a href="https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g">PBS Space Time</a></li>
+<li><a href="https://www.youtube.com/channel/UCtESv1e7ntJaLJYKIO1FoYw">Periodic Videos</a></li>
+<li><a href="https://www.youtube.com/channel/UC7DdEm33SyaTDtWYGO2CwdA">Physics Girl</a></li>
+<li><a href="https://www.youtube.com/channel/UCgNg3vwj3xt7QOrcIDaHdFg">PolyMatter</a></li>
+<li><a href="https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA">Primitive Technology</a></li>
+<li><a href="https://www.youtube.com/channel/UCpVm7bg6pXKo1Pr6k5kxG9A">National Geographic</a></li>
+<li><a href="https://www.youtube.com/channel/UC6107grRI4m0o2-emgoDnAA">SmarterEveryDay</a></li>
+<li><a href="https://www.youtube.com/channel/UC8VkNBOwvsTlFjoSnNSMmxw">Smarter Every Day 2</a></li>
+<li><a href="https://www.youtube.com/channel/UCYeF244yNGuFefuFKqxIAXw">The Royal Institution</a></li>
+<li><a href="https://www.youtube.com/channel/UCUK0HBIBWgM2c4vsPhkYY4w">The Slow Mo Guys</a></li>
+<li><a href="https://www.youtube.com/channel/UC0tq0g5u2bo-TErZt7SJM6w">The Sound Traveler</a></li>
+<li><a href="https://www.youtube.com/channel/UC06E4Y_-ybJgBUMtXx8uNNw">TheBackyardScientist</a></li>
+<li><a href="https://www.youtube.com/channel/UC52kszkc08-acFOuogFl5jw">Tibees</a></li>
+<li><a href="https://www.youtube.com/channel/UCSIvk78tK2TiviLQn4fSHaw">Up and Atom</a></li>
+<li><a href="https://www.youtube.com/channel/UCtxJFU9DgUhfr2J2bveCHkQ">Verge Science</a></li>
+<li><a href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">Veritasium</a></li>
+<li><a href="https://www.youtube.com/channel/UCAuUUnT6oDeKwE6v1NGQxug">TED</a></li>
+<li><a href="https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA">TED-Ed</a></li>
+<li><a href="https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q">TEDx Talks</a></li>
+<li><a href="https://www.youtube.com/channel/UCvBqzzvUBLCs8Y7Axb-jZew">Sixty Symbols</a></li>
+<li><a href="https://www.youtube.com/channel/UCZYTClx2T1of7BRZ86-8fow">SciShow</a></li>
+<li><a href="https://www.youtube.com/channel/UCxzC4EngIsMrPmbm6Nxvb-A">Scott Manley</a></li>
+<li><a href="https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA">Vsauce</a></li>
+<li><a href="https://www.youtube.com/channel/UCqmugCqELzhIMNYnsjScXXw">Vsauce2</a></li>
+<li><a href="https://www.youtube.com/channel/UCwmFOfFuvRPI112vR5DNnrA">Vsauce3</a></li>
+<li><a href="https://www.youtube.com/channel/UClq42foiSgl7sSpLupnugGA">D!NG</a></li>
+<li><a href="https://www.youtube.com/channel/UC9RM-iSvTu1uPJb8X5yp3EQ">Wendover Productions</a></li>
+<li><a href="https://www.youtube.com/channel/UCpCSAcbqs-sjEVfk_hMfY9w">Zach Star</a></li>
+<li><a href="https://www.youtube.com/channel/UCTev4RNBiu6lqtx8z1e87fQ">acapellascience</a></li>
+<li><a href="https://www.youtube.com/channel/UC6-ymYjG0SU0jUWnWh9ZzEQ">Wisecrack</a></li>
+<li><a href="https://www.youtube.com/channel/UCphTF9wHwhCt-BzIq-s4V-g">What If</a></li>
+<li><a href="https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg">minutephysics</a></li>
+<li><a href="https://www.youtube.com/channel/UCkyfHZ6bY2TjqbJhiH8Y2QQ">thebrainscoop</a></li>
+<li><a href="https://www.youtube.com/channel/UC6uKrU_WqJ1R2HMTY3LIx5Q">Everyday Astronaut</a></li>
+<li><a href="https://www.youtube.com/channel/UClZbmi9JzfnB2CEb0fG8iew">Primal Space</a></li>
+</ul>
+<h3><a class="header" href="#mathematics" id="mathematics">Mathematics</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
+<li><a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">Mathologer</a></li>
+<li><a href="https://www.youtube.com/channel/UC-EnprmCZ3OXyAoG7vjVNCA">Stanford</a></li>
+<li><a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">Numberphile</a></li>
+<li><a href="https://www.youtube.com/channel/UCyp1gCHZJU_fGWFf2rtMkCg">Numberphile2</a></li>
+<li><a href="https://www.youtube.com/channel/UCoHhuummRZaIVX7bD4t2czg">Professor Leonard</a></li>
+<li><a href="https://www.youtube.com/channel/UC9yt3wz-6j19RwD5m5f6HSg">Think Twice</a></li>
+<li><a href="https://www.youtube.com/channel/UCOGeU-1Fig3rrDjhm9Zs_wg">Vihart</a></li>
+<li><a href="https://www.youtube.com/channel/UC_SvYP0k05UKiJ_2ndB02IA">blackpenredpen</a></li>
+<li><a href="https://www.youtube.com/channel/UCFe6jenM1Bc54qtBsIJGRZQ">patrickJMT</a></li>
+<li><a href="https://www.youtube.com/channel/UCMpizQXRt817D0qpBQZ2TlA">singingbanana</a></li>
+<li><a href="https://www.youtube.com/channel/UCSju5G2aFaWMqn-_0YBtq5A">standupmaths</a></li>
+</ul>
+<h3><a class="header" href="#technology" id="technology">Technology</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCgyqtNWZmIxTx3b6OxTSALw">Android Authority</a></li>
+<li><a href="https://www.youtube.com/channel/UCE_M8A5yxnLfW0KghEeajjw">Apple</a></li>
+<li><a href="https://www.youtube.com/channel/UCXGgrKt94gR6lmN4aN3mYTg">Austin Evans</a></li>
+<li><a href="https://www.youtube.com/channel/UCILl8ozWuxnFYXIe2svjHhg">BPS.space</a></li>
+<li><a href="https://www.youtube.com/channel/UCnEiGCE13SUI7ZvojTAVBKw">Bill Gates</a></li>
+<li><a href="https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g">Blender Guru</a></li>
+<li><a href="https://www.youtube.com/channel/UCEOXxzW2vU0P-0THehuIIeg">Captain Disillusion</a></li>
+<li><a href="https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A">ColdFusion</a></li>
+<li><a href="https://www.youtube.com/channel/UC726J5A0LLFRxQ0SZqr2mYQ">Curious Droid</a></li>
+<li><a href="https://www.youtube.com/channel/UCkWbqlDAyJh2n8DN5X6NZyg">Data Is Beautiful</a></li>
+<li><a href="https://www.youtube.com/channel/UCVYamHliCI9rw1tHR1xbkfw">Dave Lee</a></li>
+<li><a href="https://www.youtube.com/channel/UC3s0BtrBJpwNDaflRSoiieQ">Hak5</a></li>
+<li><a href="https://www.youtube.com/channel/UCWFKCr40YwOZQx8FHU_ZqqQ">JerryRigEverything</a></li>
+<li><a href="https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA">Lex Fridman</a></li>
+<li><a href="https://www.youtube.com/channel/UCRcgy6GzDeccI7dkbbBna3Q">LEMMiNO</a></li>
+<li><a href="https://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ">Marques Brownlee</a></li>
+<li><a href="https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw">Linus Tech Tips</a></li>
+<li><a href="https://www.youtube.com/channel/UCgTNupxATBfWmfehv21ym-g">Null Byte</a></li>
+<li><a href="https://www.youtube.com/channel/UCSrPuHtKbst7Zy8pyWn_3Cg">What's Inside?</a></li>
+<li><a href="https://www.youtube.com/channel/UC0vBXGSyV14uvJ4hECDOl0Q">Techquickie</a></li>
+<li><a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA">SpaceX</a></li>
+<li><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw">TechLead</a></li>
+<li><a href="https://www.youtube.com/channel/UCeeFfhMcJa1kjtfZAGskOCA">TechLinked</a></li>
+<li><a href="https://www.youtube.com/channel/UCMiJRAwDNSNzuYeN2uWa0pA">Mrwhosetheboss</a></li>
+<li><a href="https://www.youtube.com/channel/UCcM-EIxza5g1S0dpnoO_ePA">Reigarw Comparisons</a></li>
+<li><a href="https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ">Simone Giertz</a></li>
+<li><a href="https://www.youtube.com/channel/UCjr2bPAyPV7t35MvcgT3W8Q">The Hated One</a></li>
+<li><a href="https://www.youtube.com/channel/UCZdGJgHbmqQcVZaJCkqDRwg">The Q</a></li>
+<li><a href="https://www.youtube.com/channel/UCGaVdbSav8xWuFWTadK6loA">vlogbrothers</a></li>
+<li><a href="https://www.youtube.com/channel/UCBa659QWEk1AI4Tg--mrJ2A">Tom Scott</a></li>
+<li><a href="https://www.youtube.com/channel/UCsTcErHg8oDvUnTzoqsYeNw">Unbox Therapy</a></li>
+<li><a href="https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg">Y Combinator</a></li>
+<li><a href="https://www.youtube.com/channel/UConVfxXodg78Tzh5nNu85Ew">Welch Labs</a></li>
+<li><a href="https://www.youtube.com/channel/UCK7tptUDHh-RYDsdxO1-5QQ">Wall Street Journal</a></li>
+<li><a href="https://www.youtube.com/channel/UCqnbDFdCpuN8CMEg0VuEBqA">The New York Times</a></li>
+<li><a href="https://www.youtube.com/channel/UCftwRNsjfRo08xYE31tkiyw">WIRED</a></li>
+</ul>
+<h3><a class="header" href="#miscellaneous" id="miscellaneous">Miscellaneous</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCnQC_G5Xsjhp9fEJKuIcrSw">Ben Shapiro</a></li>
+<li><a href="https://www.youtube.com/channel/UCbpMy0Fg74eXXkvxJrtEn3w">Bon Appétit</a></li>
+<li><a href="https://www.youtube.com/channel/UCBZiUUYeLfS5rIj4TQvgSvA">Channel Super Fun</a></li>
+<li><a href="https://www.youtube.com/channel/UCI4fHQkguBNW3SwTqmehzjw">DALLMYD</a></li>
+<li><a href="https://www.youtube.com/channel/UC8EQAfueDGNeqb1ALm0LjHA">Exploring Alternatives</a></li>
+<li><a href="https://www.youtube.com/channel/UCzQUP1qoWDoEbmsQxvdjxgQ">PowerfulJRE</a></li>
+<li><a href="https://www.youtube.com/channel/UCnxGkOGNMqQEUMvroOWps6Q">JRE Clips</a></li>
+<li><a href="https://www.youtube.com/channel/UCHCph-_jLba_9atyCZJPLQQ">How It Should Have Ended</a></li>
+<li><a href="https://www.youtube.com/channel/UC1DTYW241WD64ah5BFWn4JA">Sam O'Nella Academy</a></li>
+<li><a href="https://www.youtube.com/channel/UCGwu0nbY2wSkW8N-cghnLpA">Jaiden Animations</a></li>
+<li><a href="https://www.youtube.com/channel/UCo8bcnLyZH8tBIH9V1mLgqQ">TheOdd1sOut</a></li>
+<li><a href="https://www.youtube.com/channel/UCL_f53ZEJxp8TtlOkHwMV9Q">Jordan B Peterson</a></li>
+<li><a href="https://www.youtube.com/channel/UCP1iRaFlS5EYjJBryFV9JPw">Looper</a></li>
+<li><a href="https://www.youtube.com/channel/UCNAxrHudMfdzNi6NxruKPLw">Sam Harris</a></li>
+<li><a href="https://www.youtube.com/channel/UCfdNM3NAhaBOXCafH7krzrA">The Infographics Show</a></li>
+<li><a href="https://www.youtube.com/channel/UC3sznuotAs2ohg_U__Jzj_Q">The Film Theorists</a></li>
+<li><a href="https://www.youtube.com/channel/UCxDZs_ltFFvn0FDHT6kmoXA">bald and bankrupt</a></li>
+<li><a href="https://www.youtube.com/channel/UCpFFItkfZz1qz5PpHpqzYBw">Nexpo</a></li>
+<li><a href="https://www.youtube.com/channel/UCaGOgwGKnDVOKY0DrFsBAiA">ScareTheater</a></li>
+<li><a href="https://www.youtube.com/channel/UCn8zNIfYAQNdrFRrr8oibKw">VICE</a></li>
+</ul>
+<h3><a class="header" href="#magic--puzzles" id="magic--puzzles">Magic + Puzzles</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCnmgSO_4g6QcRzy0yFeglyA">Grand Illusions</a></li>
+<li><a href="https://www.youtube.com/channel/UCrPUg54jUy1T_wII9jgdRbg">Chris Ramsay</a></li>
+<li><a href="https://www.youtube.com/channel/UCqTVfT9JQqhA6_Hi_h_h97Q">J Perm</a></li>
+<li><a href="https://www.youtube.com/channel/UCHz5JQAUSkjxrosDIWCtEdw">thechesswebsite</a></li>
+<li><a href="https://www.youtube.com/channel/UCCDOQrpqLqKVcTCKzqarxLg">ChessNetwork</a></li>
+<li><a href="https://www.youtube.com/channel/UCRd9JHiQvqwT8O4d0QGI9jQ">Scam Nation</a></li>
+<li><a href="https://www.youtube.com/channel/UC42VsoDtra5hMiXZSsD6eGg">The Modern Rogue</a></li>
+</ul>
+<h3><a class="header" href="#gaming--memes" id="gaming--memes">Gaming + Memes</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ">Dude Perfect</a></li>
+<li><a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">MrBeast</a></li>
+<li><a href="https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw">PewDiePie</a></li>
+<li><a href="https://www.youtube.com/channel/UCuriCa9loP_OsH75_5j8M5w">JablinskiGames</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../docs/reddit.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../docs/random-useful-sites.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../docs/reddit.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../docs/random-useful-sites.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Software and Services - [ rsapkf / 42 ]</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 42</a></li><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">2.</strong> docs/</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../docs/knowledge-repositories.html"><strong aria-hidden="true">2.1.</strong> Knowledge Repositories</a></li><li class="chapter-item expanded "><a href="../docs/web-development.html"><strong aria-hidden="true">2.2.</strong> Web Development</a></li><li class="chapter-item expanded "><a href="../docs/programming.html"><strong aria-hidden="true">2.3.</strong> Programming</a></li><li class="chapter-item expanded "><a href="../docs/open-source-software.html"><strong aria-hidden="true">2.4.</strong> Open Source Software</a></li><li class="chapter-item expanded "><a href="../docs/linux-configuration.html"><strong aria-hidden="true">2.5.</strong> Linux Configuration</a></li><li class="chapter-item expanded "><a href="../docs/privacy-tools.html"><strong aria-hidden="true">2.6.</strong> Privacy Tools</a></li><li class="chapter-item expanded "><a href="../docs/software-and-services.html" class="active"><strong aria-hidden="true">2.7.</strong> Software and Services</a></li><li class="chapter-item expanded "><a href="../docs/coding-challenges.html"><strong aria-hidden="true">2.8.</strong> Coding Challenges</a></li><li class="chapter-item expanded "><a href="../docs/science-technology-and-mathematics.html"><strong aria-hidden="true">2.9.</strong> Science, Technology and Mathematics</a></li><li class="chapter-item expanded "><a href="../docs/moocs-and-courses.html"><strong aria-hidden="true">2.10.</strong> Massive Open Online Courses</a></li><li class="chapter-item expanded "><a href="../docs/free-to-read-books-and-guides.html"><strong aria-hidden="true">2.11.</strong> Free-To-Read Books and Guides</a></li><li class="chapter-item expanded "><a href="../docs/cubing-puzzles-and-magic.html"><strong aria-hidden="true">2.12.</strong> Cubing, Puzzles and Magic</a></li><li class="chapter-item expanded "><a href="../docs/reddit.html"><strong aria-hidden="true">2.13.</strong> Reddit Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/youtube.html"><strong aria-hidden="true">2.14.</strong> YouTube Subscriptions</a></li><li class="chapter-item expanded "><a href="../docs/random-useful-sites.html"><strong aria-hidden="true">2.15.</strong> Random Useful Sites</a></li><li class="chapter-item expanded "><a href="../docs/ebooks-and-research-papers.html"><strong aria-hidden="true">2.16.</strong> Ebooks and Research Papers</a></li><li class="chapter-item expanded "><a href="../docs/high-school.html"><strong aria-hidden="true">2.17.</strong> High School</a></li><li class="chapter-item expanded "><a href="../docs/extras.html"><strong aria-hidden="true">2.18.</strong> Extras</a></li><li class="chapter-item expanded "><a href="../docs/unsorted.html"><strong aria-hidden="true">2.19.</strong> Unsorted</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="../CONTRIBUTING.html"><strong aria-hidden="true">3.</strong> CONTRIBUTING</a></li><li class="chapter-item expanded "><a href="../LICENSE.html"><strong aria-hidden="true">4.</strong> LICENSE</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">[ rsapkf / 42 ]</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/rsapkf/42" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#software-and-services" id="software-and-services">Software and Services</a></h1>
+<p><strong>Note</strong>: This file only contains resources that are NOT in the <a href="./privacy-tools.html">./privacy-tools.md</a> file. Most closed-source software and services go here.</p>
+<ul>
+<li>
+<p>Programming Tools</p>
+<ul>
+<li><a href="https://kite.com/">kite</a> - code completion plugin for Python that works with PyCharm, VS Code, Vim, Spyder, &amp; more.</li>
+</ul>
+</li>
+<li>
+<p>Operating Systems</p>
+<ul>
+<li>
+<p>For PC</p>
+<ul>
+<li><a href="https://www.oracle.com/solaris">Oracle Solaris</a></li>
+<li><a href="https://www.apple.com/macos">Apple macOS</a></li>
+<li><a href="https://www.microsoft.com/en-us/windows">Microsoft Windows</a></li>
+</ul>
+</li>
+<li>
+<p>For Mobile</p>
+<ul>
+<li><a href="https://www.apple.com/ios">iOS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Browser Add-ons/Extensions</p>
+<ul>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/lastpass-password-manager/">LastPass Password Manager</a></li>
+<li><a href="https://addons.mozilla.org/en-US/android/addon/grammarly-1/">Grammarly for Firefox</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/">Enhancer for YouTube™</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/wikiwand-wikipedia-modernized/">Wikiwand: Wikipedia Modernized</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">Tampermonkey</a> - userscript manager. <code>open-source upto v2.9</code></li>
+</ul>
+</li>
+<li>
+<p>Web Browsers:</p>
+<ul>
+<li><a href="https://www.google.com/chrome/">Google Chrome</a></li>
+<li><a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a></li>
+</ul>
+</li>
+<li>
+<p>Search Engines</p>
+<ul>
+<li><a href="https://www.metacrawler.com/">Metacrawler</a></li>
+<li><a href="https://www.google.com/">Google</a></li>
+<li><a href="https://www.bing.com/">Bing</a></li>
+</ul>
+</li>
+<li>
+<p>Cloud Storage</p>
+<ul>
+<li><a href="https://google.com/drive">Google Drive</a></li>
+<li><a href="https://www.dropbox.com/">Dropbox</a></li>
+</ul>
+</li>
+<li>
+<p>Feed Readers</p>
+<ul>
+<li><a href="https://feedly.com/">Feedly</a> - News aggregator application.</li>
+<li><a href="https://www.inoreader.com/">Inoreader</a> -  Web-based content and RSS feed reader.</li>
+</ul>
+</li>
+<li>
+<p>Document Readers</p>
+<ul>
+<li><a href="https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html">Adobe Acrobat Reader</a> <code>PDF</code></li>
+<li><a href="https://www.foxitsoftware.com/pdf-reader/">Foxit Reader</a> <code>PDF</code></li>
+<li><a href="https://fbreader.org/">FBReader</a> <code>open-source until 2015</code></li>
+</ul>
+</li>
+<li>
+<p>YouTube Alternatives</p>
+<ul>
+<li><a href="https://www.bitchute.com/">BitChute</a> - allows video uploaders to avoid content rules enforced on other platforms, such as YouTube. </li>
+<li><a href="https://vimeo.com/">Vimeo</a> - ad-free video platform.</li>
+</ul>
+</li>
+<li>
+<p>Note Taking, Project Management, Collaboration</p>
+<ul>
+<li><a href="https://roamresearch.com/">Roam</a> - A note-taking tool for networked thoughts.</li>
+<li><a href="https://culturedcode.com/things/">Things</a> - award-winning personal task manager that helps you achieve your goals. <code>iOS</code> <code>macOS</code></li>
+<li><a href="https://www.notion.so/">Notion</a></li>
+<li><a href="https://evernote.com/">Evernote</a></li>
+<li><a href="https://todoist.com/">todoist</a></li>
+<li><a href="https://www.taskade.com/">Taskade</a></li>
+<li><a href="https://trello.com/">Trello</a></li>
+<li><a href="https://airtable.com/">Airtable</a></li>
+<li><a href="https://workflowy.com/">WorkFlowy</a></li>
+<li><a href="https://quip.com/">Quip</a> - Secure productivity for the enterprise.</li>
+<li><a href="https://asana.com/">Asana</a></li>
+<li><a href="https://www.dropbox.com/paper">Dropbox Paper</a></li>
+<li><a href="https://zenkit.com/">Zenkit</a></li>
+<li><a href="https://bear.app/">Bear</a> - Bear is a beautiful, flexible writing app for crafting notes and prose. <code>iOS</code> <code>macOS</code></li>
+<li><a href="https://notable.md/">Notable</a> - The Markdown-based note-taking app that doesn't suck. <code>open-source upto v1.5.1</code></li>
+<li><a href="https://typora.io/">Typora</a> - A new way to read and write Markdown.</li>
+</ul>
+</li>
+<li>
+<p>Read Later/Bookmarking</p>
+<ul>
+<li><a href="https://getpocket.com/">Pocket</a> - When you find something you want to view later, put it in Pocket. <code>owned by Mozilla</code></li>
+<li><a href="https://www.instapaper.com/">Instapaper</a></li>
+<li><a href="https://pinboard.in/">Pinboard</a> - Social Bookmarking for Introverts.</li>
+<li><a href="https://www.diigo.com/">Diigo</a> - Your Learning, Simplified.</li>
+<li><a href="https://raindrop.io/">Raindrop.io</a> - Your Smart Bookmarks.</li>
+</ul>
+</li>
+<li>
+<p>Instant Messaging/Communication/Video Conferencing</p>
+<ul>
+<li><a href="https://slack.com/">Slack</a></li>
+<li><a href="https://www.skype.com/">Skype</a></li>
+<li><a href="https://discordapp.com/">Discord</a></li>
+<li><a href="https://zoom.us/">Zoom</a></li>
+<li><a href="https://hangouts.google.com/">Hangouts</a></li>
+</ul>
+</li>
+<li>
+<p>Remote Desktop Clients</p>
+<ul>
+<li><a href="https://www.teamviewer.com/">TeamViewer</a> - remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.</li>
+</ul>
+</li>
+<li>
+<p>Design Tools</p>
+<ul>
+<li><a href="https://adobe.com">Adobe</a> - Creativity for all.</li>
+<li><a href="https://affinity.serif.com/en-us/">Affinity</a> - Graphics software redefined.</li>
+</ul>
+</li>
+<li>
+<p>Office Suites</p>
+<ul>
+<li><a href="https://www.zoho.com/">Zoho</a> - Privacy-friendly Alternative to Microsoft Office and Google Docs.</li>
+<li><a href="https://www.office.com/">Microsoft Office</a></li>
+<li><a href="https://www.google.com/docs/about/">Google Docs</a></li>
+</ul>
+</li>
+<li>
+<p>Movie Ratings and Reviews</p>
+<ul>
+<li><a href="imdb.com/">IMDb</a> - Internet Movie Database.
+<ul>
+<li><a href="https://www.imdb.com/search/">IMDb Advanced Search</a></li>
+<li><a href="https://help.imdb.com/article/imdb/track-movies-tv/how-do-i-sort-my-ratings-by-the-title-type/G4LHN2ZSCPNM5W2S">Sort your IMDb ratings by title type</a></li>
+</ul>
+</li>
+<li><a href="https://www.metacritic.com/">Metacritic</a></li>
+<li><a href="https://rottentomatoes.com/">Rotten Tomatoes</a></li>
+</ul>
+</li>
+<li>
+<p>Music</p>
+<ul>
+<li><a href="https://www.spotify.com">Spotify</a> - Spotify gives you instant access to millions of songs.</li>
+<li><a href="https://www.shazam.com/">Shazam</a> - Shazam will identify any music playing around you.</li>
+</ul>
+</li>
+<li>
+<p>Book Reviews</p>
+<ul>
+<li><a href="https://goodreads.com/">Goodreads</a></li>
+</ul>
+</li>
+<li>
+<p>iOS/Mac</p>
+<ul>
+<li><a href="https://apolloapp.io/">Apollo Reddit Client</a> - A beautiful Reddit app built for power and speed.</li>
+<li><a href="https://omz-software.com/pythonista/">Pythonista</a> - A Full Python IDE for iOS.</li>
+<li><a href="https://www.alfredapp.com/">Alfred</a> - award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more.</li>
+</ul>
+</li>
+<li>
+<p>CAPTCHA Services</p>
+<ul>
+<li><a href="https://www.google.com/recaptcha/">reCAPTCHA</a> - Easy on Humans, Hard on Bots.</li>
+<li><a href="https://www.hcaptcha.com/">hCaptcha</a> - Private. Secure. Faster. And they pay you to use it.</li>
+</ul>
+</li>
+<li>
+<p>Other</p>
+<ul>
+<li>
+<p>Software</p>
+<ul>
+<li><a href="https://www.sap.com/index.html">SAP</a> - enterprise software to manage business operations and customer relations.</li>
+<li><a href="https://snapcraft.io/">snapcraft</a> - The app store for Linux.</li>
+<li><a href="https://google.com/earth">Google Earth</a></li>
+<li><a href="https://google.com/maps">Google Maps</a></li>
+<li><a href="https://www.vmware.com/">VMware</a></li>
+<li><a href="https://caret.io/">Caret</a> - Markdown editor for Mac, Windows and Linux.</li>
+<li><a href="https://www.geogebra.org/">GeoGebra</a> - free online math tools for graphing, geometry, 3D, and more!</li>
+<li><a href="https://www.algolia.com/">Algolia</a> - Fast, reliable and modern search and discovery.</li>
+<li><a href="https://bitly.com/">bitly</a> - Link Shortener.</li>
+<li><a href="https://starwalk.space/en">Star Walk</a> - The sky at your fingertips.</li>
+<li><a href="https://www.grammarly.com/">Grammarly</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux">Windows Subsystem for Linux</a> - compatibility layer for running Linux binary executables natively on Windows.</li>
+<li><a href="https://1.1.1.1/">Cloudflare 1.1.1.1</a> - The free app that makes your Internet safer.</li>
+<li><a href="https://www.blackmagicdesign.com/products/davinciresolve/">DaVinci Resolve</a> - DaVinci Resolve includes everything professional editors need to cut blockbuster films, television shows, and commercials.</li>
+<li><a href="https://fxhome.com/">HitFilm Express</a> - VFX software for the filmmaking revolution.</li>
+<li><a href="https://ifttt.com/">IFTTT</a> - make your apps and devices work together in new ways.</li>
+<li><a href="https://hootsuite.com/">Hootsuite</a> - Manage all your social media in one place.</li>
+<li><a href="https://buffer.com/">Buffer</a> - Build your audience and grow your brand on social media.</li>
+<li><a href="https://www.duolingo.com">Duolingo</a> - Learn a language for free. Forever.</li>
+<li><a href="https://www.ssllabs.com/">SSL Labs</a></li>
+</ul>
+</li>
+<li>
+<p>Game Engines</p>
+<ul>
+<li><a href="http://www.unrealengine.com/">Unreal Engine</a> <code>Source-available software</code></li>
+<li><a href="https://unity.com/">Unity</a></li>
+</ul>
+</li>
+<li>
+<p>Bittorrent Clients</p>
+<ul>
+<li><a href="https://tixati.com/">Tixati BitTorrent Client</a></li>
+<li><a href="https://www.bittorrent.com/">BitTorrent Bittorrent Client</a></li>
+</ul>
+</li>
+<li>
+<p>Games</p>
+<ul>
+<li><a href="http://universesandbox.com/">Universe Sandbox</a> - Physics-based space simulation software that allows anyone to create &amp; destroy on an unimaginable scale.</li>
+<li><a href="http://spaceengine.org/">SpaceEngine</a></li>
+<li><a href="https://www.kerbalspaceprogram.com/">Kerbal Space Program</a></li>
+<li><a href="https://www.chess.com/">Chess.com</a></li>
+</ul>
+</li>
+<li>
+<p>Sites</p>
+<ul>
+<li><a href="https://grep.app/">Grep.app</a> - Search code in GitHub repos using regular expressions.</li>
+<li><a href="https://www.prototypr.io/tools/">Prototypr.io</a></li>
+<li><a href="https://uptimerobot.com/">UptimeRobot</a> - Free Website Monitoring.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../docs/privacy-tools.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../docs/coding-challenges.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../docs/privacy-tools.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../docs/coding-challenges.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
