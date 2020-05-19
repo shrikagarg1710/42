@@ -15,7 +15,7 @@ git-repository-icon = "fa-github"
 # title = "Example book"
 # authors = ["John Doe", "Jane Doe"]
 # description = "The example book covers examples."
-
+# 
 # [output.html]
 # theme = "my-theme"
 # default-theme = "light"
@@ -28,16 +28,16 @@ git-repository-icon = "fa-github"
 # no-section-label = false
 # git-repository-url = "https://github.com/rust-lang/mdBook"
 # git-repository-icon = "fa-github"
-
+# 
 # [output.html.fold]
 # enable = false
 # level = 0
-
+# 
 # [output.html.playpen]
 # editable = false
 # copy-js = true
 # line-numbers = false
-
+# 
 # [output.html.search]
 # enable = true
 # limit-results = 30
